@@ -1,0 +1,15 @@
+.promo {
+  background-image: url('/assets/images/bordeaux.jpg');
+  background-size: cover;
+  height: 400px;
+  padding-top: 1em;
+
+  .text {
+    color: white;
+
+    h1 {
+      padding-bottom: 1em;
+      border-bottom: 1px solid white;
+    }
+  }
+}
