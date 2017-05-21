@@ -1,0 +1,18 @@
+.footer {
+  @include make-container();
+  text-align: center;
+  color: $gray-light;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  :before {
+    @include make-row();
+  }
+
+  .credits {
+    font-size: $small-font-size;
+
+    ul {
+      @include list-unstyled();
+    }
+  }
+}

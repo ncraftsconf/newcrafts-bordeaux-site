@@ -4,10 +4,7 @@
   background-size: cover;
   height: 400px;
   padding-top: 1em;
-
-  :before {
-    @include make-row();
-  }
+  color: $white;
 
   .text {
     @include make-col-ready();
@@ -18,11 +15,21 @@
       @include make-col(6);
     }
 
-    color: $white;
-
     h1 {
       padding-bottom: 1em;
       border-bottom: 1px solid white;
+    }
+  }
+
+  .date {
+    text-align: center;
+    vertical-align: middle;
+    @include make-col-ready();
+    @media (max-width: 52em) {
+      @include make-col(12);
+    }
+    @media (min-width: 52.1em) {
+      @include make-col(6);
     }
   }
 }
