@@ -1,11 +1,24 @@
 .promo {
+  @include make-container();
   background-image: url('../../assets/images/bordeaux.jpg');
   background-size: cover;
   height: 400px;
   padding-top: 1em;
 
+  :before {
+    @include make-row();
+  }
+
   .text {
-    color: white;
+    @include make-col-ready();
+    @media (max-width: 52em) {
+      @include make-col(12);
+    }
+    @media (min-width: 52.1em) {
+      @include make-col(6);
+    }
+
+    color: $white;
 
     h1 {
       padding-bottom: 1em;
