@@ -1,10 +1,11 @@
 .promo {
   @include make-container();
-  background-image: url('../../assets/images/bordeaux.jpg');
   background-size: cover;
+  background: url('../../assets/images/bordeaux.jpg') no-repeat center center fixed;
   height: 400px;
   padding-top: 1em;
   color: $white;
+  position: relative;
 
   .text {
     @include make-col-ready();
@@ -32,4 +33,14 @@
       @include make-col(6);
     }
   }
+}
+
+header.promo::before {
+  content: "";
+  background-color: rgba(50, 50, 50, 0.5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
