@@ -1,4 +1,4 @@
-.promo {
+#promo {
   background-size: cover;
   background: url('../../assets/images/bordeaux.jpg') no-repeat center center fixed;
   color: $color2;
@@ -16,7 +16,7 @@
   }
 }
 
-header.promo::before {
+header#promo::before {
   content: "";
   background-color: rgba(50, 50, 50, 0.5);
   position: absolute;
