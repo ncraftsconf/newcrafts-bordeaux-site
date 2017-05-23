@@ -1,0 +1,19 @@
+#main-nav {
+
+
+  .brand {
+    height: 60px;
+  }
+
+  nav {
+    height: 60px;
+    text-align: right;
+    padding-right: 3rem;
+  }
+
+  nav > a {
+    display: inline-block;
+    line-height: 60px;
+    text-decoration: none;
+  }
+}

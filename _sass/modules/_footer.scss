@@ -1,18 +1,12 @@
 .footer {
-  @include make-container();
+  @include grid();
   text-align: center;
-  color: $gray-light;
+  color: lighten($color1, 80%);
   padding-top: 2em;
   padding-bottom: 2em;
-  :before {
-    @include make-row();
-  }
+
 
   .credits {
-    font-size: $small-font-size;
-
-    ul {
-      @include list-unstyled();
-    }
+    font-size: $base-font-size-s;
   }
 }

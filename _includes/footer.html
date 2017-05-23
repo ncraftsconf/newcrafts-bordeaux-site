@@ -5,15 +5,12 @@
     </p>
     <div class="credits">
         <p>Picture credits</p>
-        <ul>
 
-            {% for credit in site.data.credits %}
-            <li>
-                <a href="{{ credit.link }}">
-                    {{ credit.name }} by {{ credit.author}}
-                </a>
-            </li>
-            {% endfor %}
+        {% for credit in site.data.credits %}
+        <a href="{{ credit.link }}">
+            {{ credit.name }} by {{ credit.author}}
+        </a>
+        {% endfor %}
         </ul>
     </div>
 </footer>

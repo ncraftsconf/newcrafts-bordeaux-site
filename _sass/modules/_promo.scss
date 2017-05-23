@@ -1,37 +1,18 @@
 .promo {
-  @include make-container();
   background-size: cover;
   background: url('../../assets/images/bordeaux.jpg') no-repeat center center fixed;
-  height: 400px;
-  padding-top: 1em;
-  color: $white;
+  color: $color2;
   position: relative;
 
   .text {
-    @include make-col-ready();
-    @media (max-width: 52em) {
-      @include make-col(12);
-    }
-    @media (min-width: 52.1em) {
-      @include make-col(6);
-    }
-
+    padding: 10rem 2rem;
     h1 {
-      padding-bottom: 1em;
       border-bottom: 1px solid white;
     }
   }
 
   .date {
-    text-align: center;
-    vertical-align: middle;
-    @include make-col-ready();
-    @media (max-width: 52em) {
-      @include make-col(12);
-    }
-    @media (min-width: 52.1em) {
-      @include make-col(6);
-    }
+    padding: 10rem 2rem;
   }
 }
 
