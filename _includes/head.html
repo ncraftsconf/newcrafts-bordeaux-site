@@ -1,23 +1,23 @@
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Home</title>
 
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="description" content="PSD to HTML5+CSS3 conversion.">
+    <meta name="keywords" content="PSD, HTML5, CSS3">
+    <meta name="author" content="Vivaco">
 
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.jpg">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.jpg">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.jpg">
 
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-    <link rel="icon" type="image/png" href="assets/images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="assets/css/custom-animations.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 
-    <!-- SOCIAL -->
-    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta property="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-    <meta property="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-    <meta property="og:image" content="{{ '/assets/images/asset/logo-arpinum-min.png' | prepend: site.url }}">
-    <meta property="twitter:image" content="{{ '/assets/images/asset/logo-arpinum-min.png' | prepend: site.url }}">
-
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
 </head>
