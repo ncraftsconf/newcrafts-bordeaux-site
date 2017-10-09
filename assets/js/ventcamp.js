@@ -1211,7 +1211,11 @@ Ventcamp = {
 
         this.setEventHandlers();
     }
-}
+};
+
+window.mapsCallback = function () {
+    Ventcamp.initGoogleMap();
+};
 
 $('.navigation-item').on( 'click', function (event) {
     if($('#navigation').hasClass('in')){
