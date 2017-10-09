@@ -1166,12 +1166,12 @@ Ventcamp = {
     hidePreloader: function (callback) {
         var _this = this;
 
-        $('.preloader-mask').delay(500).fadeOut(600);
+        $('.preloader-mask').delay(300).fadeOut(400);
 
         setTimeout(function() {
             _this.initAnimations();
 
-        }, 700);
+        }, 300);
 
         if ( callback ) {
             callback();
@@ -1196,8 +1196,6 @@ Ventcamp = {
         if ( this.options.ajaxedForm ) this.formInit();
 
         if ( this.options.pseudoSelect ) this.initPseudoSelect();
-
-        if ( typeof google != 'undefined') this.initGoogleMap();
 
         this.windowHeightBlock();
 
