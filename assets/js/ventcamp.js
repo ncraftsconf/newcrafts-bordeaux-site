@@ -19,7 +19,7 @@ var Ventcamp;
 // Main theme functions start
 Ventcamp = {
     defaults: {
-        log: false,
+        log: true,
         styleSwitcher: false,
         animations: true,
         onePageNav: true,
@@ -1120,7 +1120,7 @@ Ventcamp = {
     setEventHandlers: function () {
         var _this = this;
 
-        $(window).on('load', function (event) {
+        $(window).on('DOMContentLoaded', function (event) {
             _this.windowLoadHeandler(event);
         });
 
