@@ -18,3 +18,7 @@
 .speaker .photo-wrapper img {
     height: 200px;
 }
+
+p {
+    line-height: 25px;
+}
