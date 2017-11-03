@@ -167,9 +167,14 @@
                     </div>
                     <h3 class="name">NICOLE RAUCH</h3>
                     <p class="text-alt">
-                        <small>Software developer & coach</small>
+                        <small>Software Developer and Development Coach</small>
                     </p>
-                    <p class="about">Software developer and somewhat crazy person.</p>
+                    <p class="about">Nicole Rauch is an independent software developer and development coach with a solid background in compiler construction and formal methods.
+                        Her focus is on Specification by Example and Domain-Driven Design as well as the restructuring of large Java legacy code applications.
+                        Nonetheless, her secret love is for functional programming.
+                        Also, she took part in conducting a number of self-organized conferences related to software craftsmanship and agile coaching, e.g. SoCraTes conference.
+                        She is one of the initiators of Softwerkskammer, the german-speaking Software Craftsmanship community.
+                    </p>
                     <ul class="speaker-socials">
                         <li>
                             <a target="_blank" href="https://twitter.com/nicolerauch">
@@ -422,14 +427,26 @@
                                             <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline" href="#schedule3_day1_main_time3" class="schedule-item-toggle">
                                                 <strong class="time highlight">
                                                     <span class="icon icon-office-24"></span>11:50 - 12:40</strong>
-                                                <h6 class="title">One track sessions
+                                                <h6 class="title">From Front to Back: Homomorphic Event Sourcing
                                                     <i class="icon icon-arrows-06"></i>
                                                 </h6>
                                             </a>
                                             <div id="schedule3_day1_main_time3" class="panel-collapse collapse in schedule-item-body">
                                                 <article>
-                                                    <p class="description">To be announced…</p>
-                                                    <strong class="highlight speaker-name"></strong>
+                                                    <p class="description">
+                                                        Event Sourcing is a way to structure a business domain model, where influences from the outside world are regarded as Commands (<em>“Buy a ticket for a concert”</em>) that internally trigger Events which are the system’s response to the corresponding Commands (<em>“Concert ticket was bought by ...”</em>).
+                                                    <br />
+                                                    <br/>
+                                                        At each point in time, the state of the system can be fully reconstructed by looking just at the Events.
+                                                        This approach, coupled with CQRS and other Domain-Driven Design techniques, has a number of advantages: It yields a clean separation of state, interactions and storage; it establishes a direct way to express business domain concepts in terms of interactions; it is composable...
+                                                    <br />
+                                                    <br />
+                                                        On the other hand, events have always been at the core of User Interfaces, which typically consist of an event loop that pumps events from the underlying system and injects back requests to redraw parts of the GUI. Modern UI frameworks like React/Redux or Elm are actually built on this abstraction: In Elm, Commands trigger an effect on the system, and the resulting Events update the state.
+                                                    <br />
+                                                    <br />
+                                                        This session proposes to fully embrace Event Sourcing in both front-end and back-end. It shows how to bridge the gap between both worlds by applying morphisms between the language of the front-end and the language of the back-end. We will demonstrate this integration on a small game built with a React UI and a Haskell backend, and in the process show how this approach fits nicely with Functional Programming languages.
+                                                    </p>
+                                                    <strong class="highlight speaker-name">Nicole Rauch & Arnaud Bailly</strong>
                                                 </article>
                                             </div>
                                         </div>
