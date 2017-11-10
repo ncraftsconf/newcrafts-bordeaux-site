@@ -613,10 +613,10 @@
                             <!--  navigation by room -->
                             <ul class="nav nav-schedule">
                                 <li class="active">
-                                    <a href="#schedule3_day2_main" data-toggle="tab">Café des sciences</a>
+                                    <a href="#schedule3_day2_main" data-toggle="tab">Open space</a>
                                 </li>
                                 <li>
-                                    <a href="#schedule3_day2_workshop" data-toggle="tab">Workshop room</a>
+                                    <a href="#schedule3_day2_workshop" data-toggle="tab">Workshops</a>
                                 </li>
                             </ul>
                             <!-- Second level content start -->
@@ -629,6 +629,16 @@
                                     <div class="panel-group" id="schedule3_day2_main_timeline">
 
                                         <!-- Lecture start -->
+                                        <div class="panel schedule-item">
+                                            <div class="lecture-icon-wrapper">
+                                                <span class="fa fa-question"></span>
+                                            </div>
+                                            <a data-toggle="collapse" data-parent="#schedule3_day2_main_timeline" class="schedule-item-toggle">
+                                                <article>
+                                                    <p class="description">An <strong>open space conference</strong> is a conference format where the agenda is created by the participants, allowing anyone wanting to discuss about a topic to propose it. Then anyone interested in the subject is free to join the discussion.</p>
+                                                </article>
+                                            </a>
+                                        </div>
                                         <div class="panel schedule-item">
                                             <div class="lecture-icon-wrapper">
                                                 <span class="fa fa-coffee"></span>
@@ -806,11 +816,32 @@
                                 <div id="schedule3_day2_workshop" class="tab-pane fade active in">
                                     <div class="panel schedule-item">
                                         <div class="lecture-icon-wrapper">
-                                            <span class="fa fa-keyboard-o"></span>
+                                            <span class="fa fa-cloud"></span>
                                         </div>
                                         <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline" href="#schedule3_day1_main_time1" class="schedule-item-toggle">
                                             <strong class="time highlight">
                                                 <span class="icon icon-office-24"></span>9:15 - 12:20</strong>
+                                            <h6 class="title">Discovering event storming
+                                                <i class="icon icon-arrows-06"></i>
+                                            </h6>
+                                        </a>
+                                        <div id="schedule3_day1_main_time1" class="panel-collapse collapse in schedule-item-body">
+                                            <article>
+                                                <p class="description">
+                                                    Let's explore a fictious business domain using the event storming approach, made famous by Alberto Brondolini.
+                                                </p>
+                                                <strong class="highlight speaker-name">Maxime SANGLAN-CHARLIER</strong>
+                                            </article>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel schedule-item">
+                                        <div class="lecture-icon-wrapper">
+                                            <span class="fa fa-keyboard-o"></span>
+                                        </div>
+                                        <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline" href="#schedule3_day1_main_time1" class="schedule-item-toggle">
+                                            <strong class="time highlight">
+                                                <span class="icon icon-office-24"></span>13:40 - 17:30</strong>
                                             <h6 class="title">Kebab kata: Fight the system making your code sad!
                                                 <i class="icon icon-arrows-06"></i>
                                             </h6>
