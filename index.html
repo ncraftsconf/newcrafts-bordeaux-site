@@ -6,10 +6,11 @@
     <meta charset="utf-8">
     <!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <title>NewCrafts Bordeaux 2017 — 7 & 8 dec.</title>
 
-    <meta name="description" content="NCrafts Bordeaux the 7 & 8 dec., an ephemeral learning ground for professional developers who care for quality code and bettering their practices.">
+    <meta name="description"
+          content="NCrafts Bordeaux the 7 & 8 dec., an ephemeral learning ground for professional developers who care for quality code and bettering their practices.">
     <meta name="keywords" content="Software Craftsmanship, Software Development, Programming">
     <meta name="author" content="newCrafts">
 
@@ -17,9 +18,9 @@
     <link rel="apple-touch-icon" href="assets/img/logo.png">
     <link rel="apple-touch-icon" sizes="256x256" href="assets/img/logo.png">
 
-    <link rel="stylesheet" type="text/css" href="assets/css/custom-animations.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/style-blue-color.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/mine.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/custom-animations.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style-blue-color.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/mine.css"/>
 
     <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
@@ -28,1233 +29,1318 @@
 </head>
 
 <body>
-    <div class="preloader-mask">
-        <div class="preloader"></div>
+<div class="preloader-mask">
+    <div class="preloader"></div>
+</div>
+
+<section id="hero" class="hero-section hero-background bg-cover window-height light-text">
+    <ul class="socials-nav">
+        <li class="socials-nav-item">
+            <a target="_blank" href="https://twitter.com/ncraftsconf">
+                <span class="fa fa-twitter"></span>
+            </a>
+        </li>
+        <li class="socials-nav-item">
+            <a target="_blank" href="https://github.com/ncraftsconf">
+                <span class="fa fa-github"></span>
+            </a>
+        </li>
+        <li class="socials-nav-item">
+            <a target="_blank" href="http://videos.ncrafts.io/">
+                <span class="fa fa-vimeo-square"></span>
+            </a>
+        </li>
+    </ul>
+    <div class="heading-block centered-block align-center">
+        <div class="container">
+            <h5 class="heading-alt" style="margin-bottom: 8px;">
+                <span class="fa fa-calendar-o base-clr-txt"></span>7&8 dec
+                <span class="fa fa-map-marker base-clr-txt" style="margin-left: 14px;"></span>Bordeaux</h5>
+            <h1 class="extra-heading">nCrafts Bdx</h1>
+            <h6 class="thin base-font subtitle">
+                Created by developers for developers,
+                <strong>NewCrafts</strong> is an ephemeral learning ground for professional developers who care for
+                quality code
+                and bettering their practices
+            </h6>
+            <div class="btns-container">
+                <a href="https://checkout.eventlama.com/#/events/newcrafts-bordeaux/tickets" target="_blank"
+                   class="btn btn-md">GET TICKETS</a>
+                <a href="#schedule" class="btn btn-outline btn-md">SCHEDULE</a>
+            </div>
+        </div>
     </div>
+</section>
 
-    <section id="hero" class="hero-section hero-background bg-cover window-height light-text">
-        <ul class="socials-nav">
-            <li class="socials-nav-item">
-                <a target="_blank" href="https://twitter.com/ncraftsconf">
-                    <span class="fa fa-twitter"></span>
-                </a>
-            </li>
-            <li class="socials-nav-item">
-                <a target="_blank" href="https://github.com/ncraftsconf">
-                    <span class="fa fa-github"></span>
-                </a>
-            </li>
-            <li class="socials-nav-item">
-                <a target="_blank" href="http://videos.ncrafts.io/">
-                    <span class="fa fa-vimeo-square"></span>
-                </a>
-            </li>
-        </ul>
-        <div class="heading-block centered-block align-center">
-            <div class="container">
-                <h5 class="heading-alt" style="margin-bottom: 8px;">
-                    <span class="fa fa-calendar-o base-clr-txt"></span>7&8 dec
-                    <span class="fa fa-map-marker base-clr-txt" style="margin-left: 14px;"></span>Bordeaux</h5>
-                <h1 class="extra-heading">nCrafts Bdx</h1>
-                <h6 class="thin base-font subtitle">
-                    Created by developers for developers,
-                    <strong>NewCrafts</strong> is an ephemeral learning ground for professional developers who care for quality code
-                    and bettering their practices
-                </h6>
-                <div class="btns-container">
-                    <a href="https://checkout.eventlama.com/#/events/newcrafts-bordeaux/tickets" target="_blank" class="btn btn-md">GET TICKETS</a>
-                    <a href="#schedule" class="btn btn-outline btn-md">SCHEDULE</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <header class="header header-black">
-        <div class="header-wrapper">
-            <div class="container">
-                <div class="col-sm-2 col-xs-12 navigation-header align-center">
-                    <a href="#" class="logo">
-                        <img src="assets/img/logo.png" alt="nCrafts" height="85" class="retina-hide">
-                        <img src="assets/img/logo.png" alt="nCrafts" height="85" class="retina-show">
-                    </a>
-                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-controls="navigation">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-
-                <div class="col-sm-10 col-xs-12 navigation-container">
-                    <div id="navigation" class="navbar-collapse collapse">
-                        <ul class="navigation-list pull-left light-text">
-                            <li class="navigation-item">
-                                <a href="#speakers" class="navigation-link">Speakers</a>
-                            </li>
-                            <li class="navigation-item">
-                                <a href="#schedule" class="navigation-link">Schedule</a>
-                            </li>
-                            <li class="navigation-item">
-                                <a href="#gallery" class="navigation-link">Past events</a>
-                            </li>
-                            <li class="navigation-item">
-                                <a href="#sponsors" class="navigation-link">Sponsors</a>
-                            </li>
-                            <li class="navigation-item">
-                                <a href="#location" class="navigation-link">Location</a>
-                            </li>
-                            <li class="navigation-item">
-                                <a href="#contacts" class="navigation-link">Contacts</a>
-                            </li>
-                        </ul>
-
-                        <a target="_blank" href="https://checkout.eventlama.com/#/events/newcrafts-bordeaux/tickets" class="pull-right buy-btn">Buy Tickets</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <section class="section align-center" style="padding: 100px 0 30px;">
+<header class="header header-black">
+    <div class="header-wrapper">
         <div class="container">
-            <span class="icon section-icon icon-multimedia-12"></span>
-            <p class="text-alt">« I’m not a great programmer; I’m just a good programmer with great habits. »
-            </p>
-            <br/>
-            <br/>
-            <div class="col-sm-6 align-center img-column">
-                <img src="assets/img/illu_1.jpg" alt="" />
+            <div class="col-sm-2 col-xs-12 navigation-header align-center">
+                <a href="#" class="logo">
+                    <img src="assets/img/logo.png" alt="nCrafts" height="85" class="retina-hide">
+                    <img src="assets/img/logo.png" alt="nCrafts" height="85" class="retina-show">
+                </a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation"
+                        aria-expanded="false" aria-controls="navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
             </div>
 
-            <div class="col-sm-6 align-left">
-                <article style="max-width: 480px;">
-                    <h3>Programming as a Way of Thinking</h3>
-                    <p class="text-alt">A conference that doesn’t affect the way you think about programming, is not worth attending!
-                    </p>
-                    <p>
-                        Created by developers for developers, NewCrafts is an independent and international event on software development held annually
-                        in Paris since 2014.
-                        <br/> Because we believe it is not enough for code to work, we wan't to challenge not only the way you
-                        develop but also how you perceive the profession and your craft.
-                        <br/>
-                    </p>
-                    <p>
-                        <strong>For the first time</strong>, Bordeaux welcome a two days local edition with both english & french
-                        sessions.
-                        <br /> First day will be a single track conference, while second day will be run as an open space unconference.
-                    </p>
-                    <p>
-                        <strong>We provide place, coffee and speakers, so that you can take care of the rest.</strong>
-                    </p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section id="speakers" class="section align-center">
-        <div class="container">
-            <span class="icon section-icon icon-faces-users-04"></span>
-            <h3>Speakers</h3>
-            <p class="text-alt">Meet our
-                <span class="highlight">hosts</span>
-            </p>
-            <br/>
-            <br/>
-
-            <div class="col-sm-4">
-                <div class="speaker">
-                    <div class="photo-wrapper rounded">
-                        <img src="assets/img/speakers/nrauch.png" alt="Nicole Rauch" class="img-responsive">
-                    </div>
-                    <h3 class="name">NICOLE RAUCH</h3>
-                    <p class="text-alt">
-                        <small>Software Developer and Development Coach</small>
-                    </p>
-                    <p class="about">Nicole Rauch is an independent software developer and development coach with a solid background in compiler
-                        construction and formal methods. Her focus is on Specification by Example and Domain-Driven Design
-                        as well as the restructuring of large Java legacy code applications. Nonetheless, her secret love
-                        is for functional programming. Also, she took part in conducting a number of self-organized conferences
-                        related to software craftsmanship and agile coaching, e.g. SoCraTes conference. She is one of the
-                        initiators of Softwerkskammer, the german-speaking Software Craftsmanship community.
-                    </p>
-                    <ul class="speaker-socials">
-                        <li>
-                            <a target="_blank" href="https://twitter.com/nicolerauch">
-                                <span class="fa fa-twitter"></span>
-                            </a>
+            <div class="col-sm-10 col-xs-12 navigation-container">
+                <div id="navigation" class="navbar-collapse collapse">
+                    <ul class="navigation-list pull-left light-text">
+                        <li class="navigation-item">
+                            <a href="#speakers" class="navigation-link">Speakers</a>
                         </li>
-                        <li>
-                            <a target="_blank" href="https://github.com/NicoleRauch">
-                                <span class="fa fa-github"></span>
-                            </a>
+                        <li class="navigation-item">
+                            <a href="#schedule" class="navigation-link">Schedule</a>
+                        </li>
+                        <li class="navigation-item">
+                            <a href="#gallery" class="navigation-link">Past events</a>
+                        </li>
+                        <li class="navigation-item">
+                            <a href="#sponsors" class="navigation-link">Sponsors</a>
+                        </li>
+                        <li class="navigation-item">
+                            <a href="#location" class="navigation-link">Location</a>
+                        </li>
+                        <li class="navigation-item">
+                            <a href="#contacts" class="navigation-link">Contacts</a>
                         </li>
                     </ul>
+
+                    <a target="_blank" href="https://checkout.eventlama.com/#/events/newcrafts-bordeaux/tickets"
+                       class="pull-right buy-btn">Buy Tickets</a>
                 </div>
             </div>
+        </div>
+    </div>
+</header>
 
-            <div class="col-sm-4">
-                <div class="speaker">
-                    <div class="photo-wrapper rounded">
-                        <img src="assets/img/speakers/abailly.jpg" alt="Arnaud Bailly" class="img-responsive">
-                    </div>
-                    <h3 class="name">ARNAUD BAILLY</h3>
-                    <p class="text-alt">
-                        <small>
-                            Helping teams code and deliver FP software at
-                            <a href="http://symbiont.io" target="_blank">http://symbiont.io</a>
-                        </small>
-                    </p>
-                    <p class="about">
-                        Arnaud Bailly has been a researcher, consultant, agile and XP coach, architect, developer, trainer and teacher, CTO for startups...
-                        He regularly codes in Java, Haskell, Clojure, Javascript and has interest in nearly everything that
-                        touches software. He is presently Senior Software Engineer at
+<section class="section align-center" style="padding: 100px 0 30px;">
+    <div class="container">
+        <span class="icon section-icon icon-multimedia-12"></span>
+        <p class="text-alt">« I’m not a great programmer; I’m just a good programmer with great habits. »
+        </p>
+        <br/>
+        <br/>
+        <div class="col-sm-6 align-center img-column">
+            <img src="assets/img/illu_1.jpg" alt=""/>
+        </div>
+
+        <div class="col-sm-6 align-left">
+            <article style="max-width: 480px;">
+                <h3>Programming as a Way of Thinking</h3>
+                <p class="text-alt">A conference that doesn’t affect the way you think about programming, is not worth
+                    attending!
+                </p>
+                <p>
+                    Created by developers for developers, NewCrafts is an independent and international event on
+                    software development held annually
+                    in Paris since 2014.
+                    <br/> Because we believe it is not enough for code to work, we wan't to challenge not only the way
+                    you
+                    develop but also how you perceive the profession and your craft.
+                    <br/>
+                </p>
+                <p>
+                    <strong>For the first time</strong>, Bordeaux welcome a two days local edition with both english &
+                    french
+                    sessions.
+                    <br/> First day will be a single track conference, while second day will be run as an open space
+                    unconference.
+                </p>
+                <p>
+                    <strong>We provide place, coffee and speakers, so that you can take care of the rest.</strong>
+                </p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section id="speakers" class="section align-center">
+    <div class="container">
+        <span class="icon section-icon icon-faces-users-04"></span>
+        <h3>Speakers</h3>
+        <p class="text-alt">Meet our
+            <span class="highlight">hosts</span>
+        </p>
+        <br/>
+        <br/>
+
+        <div class="col-sm-4">
+            <div class="speaker">
+                <div class="photo-wrapper rounded">
+                    <img src="assets/img/speakers/nrauch.png" alt="Nicole Rauch" class="img-responsive">
+                </div>
+                <h3 class="name">NICOLE RAUCH</h3>
+                <p class="text-alt">
+                    <small>Software Developer and Development Coach</small>
+                </p>
+                <p class="about">Nicole Rauch is an independent software developer and development coach with a solid
+                    background in compiler
+                    construction and formal methods. Her focus is on Specification by Example and Domain-Driven Design
+                    as well as the restructuring of large Java legacy code applications. Nonetheless, her secret love
+                    is for functional programming. Also, she took part in conducting a number of self-organized
+                    conferences
+                    related to software craftsmanship and agile coaching, e.g. SoCraTes conference. She is one of the
+                    initiators of Softwerkskammer, the german-speaking Software Craftsmanship community.
+                </p>
+                <ul class="speaker-socials">
+                    <li>
+                        <a target="_blank" href="https://twitter.com/nicolerauch">
+                            <span class="fa fa-twitter"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/NicoleRauch">
+                            <span class="fa fa-github"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="speaker">
+                <div class="photo-wrapper rounded">
+                    <img src="assets/img/speakers/abailly.jpg" alt="Arnaud Bailly" class="img-responsive">
+                </div>
+                <h3 class="name">ARNAUD BAILLY</h3>
+                <p class="text-alt">
+                    <small>
+                        Helping teams code and deliver FP software at
                         <a href="http://symbiont.io" target="_blank">http://symbiont.io</a>
-                    </p>
-                    <ul class="speaker-socials">
-                        <li>
-                            <a target="_blank" href="https://github.com/abailly">
-                                <span class="fa fa-github"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://twitter.com/dr_c0d3">
-                                <span class="fa fa-twitter"></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                    </small>
+                </p>
+                <p class="about">
+                    Arnaud Bailly has been a researcher, consultant, agile and XP coach, architect, developer, trainer
+                    and teacher, CTO for startups...
+                    He regularly codes in Java, Haskell, Clojure, Javascript and has interest in nearly everything that
+                    touches software. He is presently Senior Software Engineer at
+                    <a href="http://symbiont.io" target="_blank">http://symbiont.io</a>
+                </p>
+                <ul class="speaker-socials">
+                    <li>
+                        <a target="_blank" href="https://github.com/abailly">
+                            <span class="fa fa-github"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/dr_c0d3">
+                            <span class="fa fa-twitter"></span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-
-            <div class="col-sm-4">
-                <div class="speaker">
-                    <div class="photo-wrapper rounded">
-                        <img src="assets/img/speakers/cdemarey.png" alt="Christophe Demarey" class="img-responsive">
-                    </div>
-                    <h3 class="name">CHRISTOPHE DEMAREY</h3>
-                    <p class="text-alt">
-                        <small>R&D engineer at
-                            <a href="https://www.inria.fr">Inria</a>
-                        </small>
-                    </p>
-                    <p class="about">Christophe Demarey is software engineer at Inria, the French National Institute for computer science
-                        and applied mathematics. He works with scientists on various topics like Adaptive distributed applications
-                        and middleware, Model-Driven Engineering, reengineering of large systems, dynamic reflective programming
-                        languages. Since 2012, he is a core developper of
-                        <a href="http://pharo.org">Pharo</a>, a pure object-oriented programming language and a powerful environment, focused on simplicity
-                        and immediate feedback. He has interest in software craftsmanship and devops. He set up a continuous
-                        integration service (SaaS model) for all Inria developers in 2012.
-                    </p>
-                    <ul class="speaker-socials">
-
-                    </ul>
-                </div>
-            </div>
-            <div class="clearfix"></div>
-            <div class="col-sm-4">
-                <div class="speaker">
-                    <div class="photo-wrapper rounded">
-                        <img src="assets/img/speakers/cdelafargue.jpg" alt="Clément Delafargue" class="img-responsive">
-                    </div>
-                    <h3 class="name">Clément Delafargue</h3>
-                    <p class="text-alt">
-                        <small>CTO at
-                            <a href="http://clever-cloud.com">Clever Cloud</a>
-                        </small>
-                    </p>
-                    <p class="about">
-                        Clément is a functional programmer, serving as CTO at Clever Cloud, where he works on IT automation and continuous delivery. He loves discussing about FP, distributed systems and cloud architecture.
-                    </p>
-                    <ul class="speaker-socials">
-                        <li>
-                            <a target="_blank" href="https://twitter.com/clementd">
-                                <span class="fa fa-twitter"></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-sm-4">
-                <div class="speaker">
-                    <div class="photo-wrapper rounded">
-                        <img src="assets/img/speakers/rmoura.jpg" alt="Romeu Moura" class="img-responsive">
-                    </div>
-                    <h3 class="name">ROMEU MOURA</h3>
-                    <p class="text-alt">
-                        <small>Reasoned Schemer</small>
-                    </p>
-                    <p class="about">Endless conversation — with friends & compilers — on art, crafts, dialectic, paradigm jump, serendipity.
-                    </p>
-                    <ul class="speaker-socials">
-                        <li>
-                            <a target="_blank" href="https://twitter.com/malk_zameth">
-                                <span class="fa fa-twitter"></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="speaker">
-                    <div class="photo-wrapper rounded">
-                        <img src="assets/img/speakers/marine.jpg" alt="Marine Campedel" class="img-responsive">
-                    </div>
-                    <h3 class="name">MARINE CAMPEDEL</h3>
-                    <p class="text-alt">
-                        <small>Donner du sens</small>
-                    </p>
-                    <p class="about">
-                        Initialement ingénieur et docteur en traitement du signal et des images, enseignant-chercheur à Télécom ParisTech pendant
-                        12 ans, Marine Campedel s'intéresse actuellement aux neurosciences éducatives. Elle participe au
-                        laboratoire GRENE (Groupe de Recherche en Neuroscience et Education) de l'Université Catholique de
-                        l'Ouest depuis 2012 et est diplômée du Diplôme Universitaire "Neurosciences et apprentissage tout
-                        au long de la vie". Formatrice indépendante, elle accompagne des établissements scolaires dans leur
-                        découverte des neurosciences éducatives et les invite à faire évoluer leurs pratiques à l'aide de
-                        la méthodologie de recherche-action.
-                    </p>
-                    <ul class="speaker-socials">
-
-                        <li>
-                            <a target="_blank" href="https://twitter.com/mcampedel?lang=fr">
-                                <span class="fa fa-twitter"></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="clearfix"></div>
-            <div class="col-sm-4">
-                <div class="speaker">
-                    <div class="photo-wrapper rounded">
-                        <img src="assets/img/speakers/michael.png" alt="Michael Sperber" class="img-responsive">
-                    </div>
-                    <h3 class="name">Michael Sperber</h3>
-                    <p class="text-alt">
-                        <small>C*O at Active Group</small>
-                    </p>
-                    <p class="about">
-                        Michael Sperber is CEO of Active Group in Filderstadt, Germany. Mike
-                        specializes in functional programming, and has been an internationally
-                        recognized expert in the field: He has spoken at the top conferences in
-                        programming languages, authored many papers on the subject as well as
-                        several books.
-                    </p>
-                    <ul class="speaker-socials">
-                        <li>
-                            <a target="_blank" href="https://twitter.com/sperbsen">
-                                <span class="fa fa-twitter"></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="clearfix"></div>
-            <p class="text-alt">More to be announced...</p>
-
         </div>
-    </section>
 
-    <section id="schedule" class="section align-center">
-        <div class="container">
-            <span class="icon section-icon icon-office-21"></span>
-            <h3>Schedule</h3>
-            <br />
-            <br />
+        <div class="col-sm-4">
+            <div class="speaker">
+                <div class="photo-wrapper rounded">
+                    <img src="assets/img/speakers/cdemarey.png" alt="Christophe Demarey" class="img-responsive">
+                </div>
+                <h3 class="name">CHRISTOPHE DEMAREY</h3>
+                <p class="text-alt">
+                    <small>R&D engineer at
+                        <a href="https://www.inria.fr">Inria</a>
+                    </small>
+                </p>
+                <p class="about">Christophe Demarey is software engineer at Inria, the French National Institute for
+                    computer science
+                    and applied mathematics. He works with scientists on various topics like Adaptive distributed
+                    applications
+                    and middleware, Model-Driven Engineering, reengineering of large systems, dynamic reflective
+                    programming
+                    languages. Since 2012, he is a core developper of
+                    <a href="http://pharo.org">Pharo</a>, a pure object-oriented programming language and a powerful
+                    environment, focused on simplicity
+                    and immediate feedback. He has interest in software craftsmanship and devops. He set up a continuous
+                    integration service (SaaS model) for all Inria developers in 2012.
+                </p>
+                <ul class="speaker-socials">
 
-            <div class="col-md-10 col-md-offset-1">
+                </ul>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-sm-4">
+            <div class="speaker">
+                <div class="photo-wrapper rounded">
+                    <img src="assets/img/speakers/cdelafargue.jpg" alt="Clément Delafargue" class="img-responsive">
+                </div>
+                <h3 class="name">Clément Delafargue</h3>
+                <p class="text-alt">
+                    <small>CTO at
+                        <a href="http://clever-cloud.com">Clever Cloud</a>
+                    </small>
+                </p>
+                <p class="about">
+                    Clément is a functional programmer, serving as CTO at Clever Cloud, where he works on IT automation
+                    and continuous delivery. He loves discussing about FP, distributed systems and cloud architecture.
+                </p>
+                <ul class="speaker-socials">
+                    <li>
+                        <a target="_blank" href="https://twitter.com/clementd">
+                            <span class="fa fa-twitter"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-                <!-- Schedule start -->
-                <div class="row schedule">
+        <div class="col-sm-4">
+            <div class="speaker">
+                <div class="photo-wrapper rounded">
+                    <img src="assets/img/speakers/rmoura.jpg" alt="Romeu Moura" class="img-responsive">
+                </div>
+                <h3 class="name">ROMEU MOURA</h3>
+                <p class="text-alt">
+                    <small>Reasoned Schemer</small>
+                </p>
+                <p class="about">Endless conversation — with friends & compilers — on art, crafts, dialectic, paradigm
+                    jump, serendipity.
+                </p>
+                <ul class="speaker-socials">
+                    <li>
+                        <a target="_blank" href="https://twitter.com/malk_zameth">
+                            <span class="fa fa-twitter"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="speaker">
+                <div class="photo-wrapper rounded">
+                    <img src="assets/img/speakers/marine.jpg" alt="Marine Campedel" class="img-responsive">
+                </div>
+                <h3 class="name">MARINE CAMPEDEL</h3>
+                <p class="text-alt">
+                    <small>Donner du sens</small>
+                </p>
+                <p class="about">
+                    Initialement ingénieur et docteur en traitement du signal et des images, enseignant-chercheur à
+                    Télécom ParisTech pendant
+                    12 ans, Marine Campedel s'intéresse actuellement aux neurosciences éducatives. Elle participe au
+                    laboratoire GRENE (Groupe de Recherche en Neuroscience et Education) de l'Université Catholique de
+                    l'Ouest depuis 2012 et est diplômée du Diplôme Universitaire "Neurosciences et apprentissage tout
+                    au long de la vie". Formatrice indépendante, elle accompagne des établissements scolaires dans leur
+                    découverte des neurosciences éducatives et les invite à faire évoluer leurs pratiques à l'aide de
+                    la méthodologie de recherche-action.
+                </p>
+                <ul class="speaker-socials">
 
-                    <!-- Navigation by day start -->
-                    <ul class="nav nav-schedule">
-                        <li class="active">
-                            <a href="#schedule3_day1" data-toggle="tab">
-                                <h5 class="highlight">Day 1 - conference</h5>
-                                <p class="text-alt">07/12/2017</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#schedule3_day2" data-toggle="tab">
-                                <h5 class="highlight">Day 2 — open space</h5>
-                                <p class="text-alt">08/12/2017</p>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- Navigation by day end -->
+                    <li>
+                        <a target="_blank" href="https://twitter.com/mcampedel?lang=fr">
+                            <span class="fa fa-twitter"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-sm-4">
+            <div class="speaker">
+                <div class="photo-wrapper rounded">
+                    <img src="assets/img/speakers/michael.png" alt="Michael Sperber" class="img-responsive">
+                </div>
+                <h3 class="name">Michael Sperber</h3>
+                <p class="text-alt">
+                    <small>C*O at Active Group</small>
+                </p>
+                <p class="about">
+                    Michael Sperber is CEO of Active Group in Filderstadt, Germany. Mike
+                    specializes in functional programming, and has been an internationally
+                    recognized expert in the field: He has spoken at the top conferences in
+                    programming languages, authored many papers on the subject as well as
+                    several books.
+                </p>
+                <ul class="speaker-socials">
+                    <li>
+                        <a target="_blank" href="https://twitter.com/sperbsen">
+                            <span class="fa fa-twitter"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-                    <!-- First level content start -->
-                    <div class="tab-content">
+        <div class="clearfix"></div>
+        <p class="text-alt">More to be announced...</p>
 
-                        <!-- Day 1 content start -->
-                        <div id="schedule3_day1" class="tab-pane fade active in">
+    </div>
+</section>
 
-                            <!-- Second level content start -->
-                            <div class="tab-content tab-content-schedule">
+<section id="schedule" class="section align-center">
+    <div class="container">
+        <span class="icon section-icon icon-office-21"></span>
+        <h3>Schedule</h3>
+        <br/>
+        <br/>
 
-                                <!-- Main content start -->
-                                <div id="schedule3_day1_main" class="tab-pane fade active in">
+        <div class="col-md-10 col-md-offset-1">
 
-                                    <!-- Accordion start -->
-                                    <div class="panel-group" id="schedule3_day1_main_timeline">
+            <!-- Schedule start -->
+            <div class="row schedule">
 
-                                        <!-- Lecture start -->
-                                        <div class="panel schedule-item">
-                                            <div class="lecture-icon-wrapper">
-                                                <span class="fa fa-coffee"></span>
-                                            </div>
-                                            <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline" class="schedule-item-toggle">
-                                                <strong class="time highlight">
-                                                    <span class="icon icon-office-24"></span>8:30 - 9:00</strong>
-                                                <h6 class="title">Check-in time
-                                                    <i class="icon icon-arrows-06"></i>
-                                                </h6>
-                                            </a>
-                                        </div>
-                                        <div class="panel schedule-item">
-                                            <div class="lecture-icon-wrapper">
-                                                <span class="fa fa-microphone"></span>
-                                            </div>
-                                            <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline" class="schedule-item-toggle" href="#schedule3_day1_main_keynote">
-                                                <strong class="time highlight">
-                                                    <span class="icon icon-office-24"></span>9:00 - 9:20</strong>
-                                                <h6 class="title">Keynote
-                                                    <i class="icon icon-arrows-06"></i>
-                                                </h6>
-                                            </a>
-                                            <div id="schedule3_day1_main_keynote" class="panel-collapse collapse in schedule-item-body">
-                                                <article>
-                                                    <p class="description">An exploration among cognitive biases, to see how they influence the way we think and act.</p>
-                                                    <strong class="highlight speaker-name">MARINE CAMPEDEL</strong>
-                                                </article>
-                                            </div>
-                                        </div>
-                                        <div class="panel schedule-item">
-                                            <div class="lecture-icon-wrapper">
-                                                <span class="fa fa-microphone"></span>
-                                            </div>
-                                            <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline" href="#schedule3_day1_main_time1" class="schedule-item-toggle">
-                                                <strong class="time highlight">
-                                                    <span class="icon icon-office-24"></span>9:30 - 10:20</strong>
-                                                <h6 class="title">The systemic of the Liskov substitution principle
-                                                    <i class="icon icon-arrows-06"></i>
-                                                </h6>
-                                            </a>
-                                            <div id="schedule3_day1_main_time1" class="panel-collapse collapse in schedule-item-body">
-                                                <article>
-                                                    <p class="description">
-                                                        The Liskov Substitution Principle: the least known and most frequently violated of all S.O.L.I.D.!
-                                                        <br><br>
-                                                        Let’s explore together what it is, why you should care, how to detect violations, how to stop violating, what is co-variance and contra-variance (What is the In/Out of C#, the Super/Extends of Java, the +/- of Scala).
-                                                        <br><br>
-                                                        But above all: Let’s see that the essence of Liskov is the essence of Object Orientation itself: Systemics.
-                                                        <br><br>
-                                                        Let’s learn to see our codebase as a System.
-                                                    </p>
-                                                    <strong class="highlight speaker-name">Romeu MOURA</strong>
-                                                </article>
-                                            </div>
-                                        </div>
+                <!-- Navigation by day start -->
+                <ul class="nav nav-schedule">
+                    <li class="active">
+                        <a href="#schedule3_day1" data-toggle="tab">
+                            <h5 class="highlight">Day 1 - conference</h5>
+                            <p class="text-alt">07/12/2017</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#schedule3_day2" data-toggle="tab">
+                            <h5 class="highlight">Day 2 — open space</h5>
+                            <p class="text-alt">08/12/2017</p>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Navigation by day end -->
 
-                                        <div class="panel schedule-item">
-                                            <div class="lecture-icon-wrapper">
-                                                <span class="fa fa-coffee"></span>
-                                            </div>
-                                            <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline" class="schedule-item-toggle">
-                                                <strong class="time highlight">
-                                                    <span class="icon icon-office-24"></span>10:20 - 10:50</strong>
-                                                <h6 class="title">Break
-                                                    <i class="icon icon-arrows-06"></i>
-                                                </h6>
-                                            </a>
-                                        </div>
+                <!-- First level content start -->
+                <div class="tab-content">
 
-                                        <div class="panel schedule-item">
-                                            <div class="lecture-icon-wrapper">
-                                                <span class="fa fa-microphone"></span>
-                                            </div>
-                                            <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline" href="#schedule3_day1_main_time2" class="schedule-item-toggle">
-                                                <strong class="time highlight">
-                                                    <span class="icon icon-office-24"></span>10:50 - 11:40</strong>
-                                                <h6 class="title">Smalltalk in 2017
-                                                    <i class="icon icon-arrows-06"></i>
-                                                </h6>
-                                            </a>
-                                            <div id="schedule3_day1_main_time2" class="panel-collapse collapse in schedule-item-body">
-                                                <article>
-                                                    <p class="description"></p>
-                                                    Thanks to
-                                                    <a href="http://pharo.org/">project pharo</a>, Smalltalk is still very much alive. In this session,
-                                                    with a mix a live coding and a little bit of theory, we will see what
-                                                    SmallTalk has to teach us in 2017 :
-                                                    <ul>
-                                                        <li>why so many ideas (TDD, refactoring) emerged from it</li>
-                                                        <li>what makes it so special</li>
-                                                        <li>what to expect for the future of pharo</li>
-                                                    </ul>
-                                                    <strong class="highlight speaker-name">Christophe DEMAREY</strong>
-                                                </article>
-                                            </div>
-                                        </div>
+                    <!-- Day 1 content start -->
+                    <div id="schedule3_day1" class="tab-pane fade active in">
 
-                                        <div class="panel schedule-item">
-                                            <div class="lecture-icon-wrapper">
-                                                <span class="fa fa-microphone"></span>
-                                            </div>
-                                            <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline" href="#schedule3_day1_main_time3" class="schedule-item-toggle">
-                                                <strong class="time highlight">
-                                                    <span class="icon icon-office-24"></span>11:50 - 12:40</strong>
-                                                <h6 class="title">From Front to Back: Homomorphic Event Sourcing
-                                                    <i class="icon icon-arrows-06"></i>
-                                                </h6>
-                                            </a>
-                                            <div id="schedule3_day1_main_time3" class="panel-collapse collapse in schedule-item-body">
-                                                <article>
-                                                    <p class="description">
-                                                        Event Sourcing is a way to structure a business domain model, where influences from the outside world are regarded as Commands
-                                                        (
-                                                        <em>“Buy a ticket for a concert”</em>) that internally trigger Events
-                                                        which are the system’s response to the corresponding Commands (
-                                                        <em>“Concert ticket was bought by ...”</em>).
-                                                        <br />
-                                                        <br/> At each point in time, the state of the system can be fully reconstructed
-                                                        by looking just at the Events. This approach, coupled with CQRS and
-                                                        other Domain-Driven Design techniques, has a number of advantages:
-                                                        It yields a clean separation of state, interactions and storage;
-                                                        it establishes a direct way to express business domain concepts in
-                                                        terms of interactions; it is composable...
-                                                        <br />
-                                                        <br /> On the other hand, events have always been at the core of User Interfaces,
-                                                        which typically consist of an event loop that pumps events from the
-                                                        underlying system and injects back requests to redraw parts of the
-                                                        GUI. Modern UI frameworks like React/Redux or Elm are actually built
-                                                        on this abstraction: In Elm, Commands trigger an effect on the system,
-                                                        and the resulting Events update the state.
-                                                        <br />
-                                                        <br /> This session proposes to fully embrace Event Sourcing in both front-end
-                                                        and back-end. It shows how to bridge the gap between both worlds
-                                                        by applying morphisms between the language of the front-end and the
-                                                        language of the back-end. We will demonstrate this integration on
-                                                        a small game built with a React UI and a Haskell backend, and in
-                                                        the process show how this approach fits nicely with Functional Programming
-                                                        languages.
-                                                    </p>
-                                                    <strong class="highlight speaker-name">Nicole Rauch & Arnaud Bailly</strong>
-                                                </article>
-                                            </div>
-                                        </div>
+                        <!-- Second level content start -->
+                        <div class="tab-content tab-content-schedule">
 
-                                        <div class="panel schedule-item">
-                                            <div class="lecture-icon-wrapper">
-                                                <span class="fa fa-cutlery"></span>
-                                            </div>
-                                            <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline" class="schedule-item-toggle">
-                                                <strong class="time highlight">
-                                                    <span class="icon icon-office-24"></span>12:40 - 14:00</strong>
-                                                <h6 class="title">Lunch time
-                                                    <i class="icon icon-arrows-06"></i>
-                                                </h6>
-                                            </a>
-                                        </div>
+                            <!-- Main content start -->
+                            <div id="schedule3_day1_main" class="tab-pane fade active in">
 
-                                        <div class="panel schedule-item">
-                                            <div class="lecture-icon-wrapper">
-                                                <span class="fa fa-microphone"></span>
-                                            </div>
-                                            <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline" href="#schedule3_day1_main_time4" class="schedule-item-toggle">
-                                                <strong class="time highlight">
-                                                    <span class="icon icon-office-24"></span>14:00 - 14:50</strong>
-                                                <h6 class="title">All my team is using rust. HALP!
-                                                    <i class="icon icon-arrows-06"></i>
-                                                </h6>
-                                            </a>
-                                            <div id="schedule3_day1_main_time4" class="panel-collapse collapse in schedule-item-body">
-                                                <article>
-                                                    <p class="description">Something strange happened at Clever Cloud: everybody has started using rust, little by little. Many greenfield projects are using rust. That's not to say we've stopped using scala, java, or ruby (and even a bit of go and haskell). As a CTO, how do I keep complexity and language diversity in check? How do I choose which language to use for projects? Do I let others choose?</p>
-                                                    <strong class="highlight speaker-name">Clément Delafargue</strong>
-                                                </article>
-                                            </div>
-                                        </div>
+                                <!-- Accordion start -->
+                                <div class="panel-group" id="schedule3_day1_main_timeline">
 
-                                        <div class="panel schedule-item">
-                                            <div class="lecture-icon-wrapper">
-                                                <span class="fa fa-microphone"></span>
-                                            </div>
-                                            <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline" href="#schedule3_day1_main_time6" class="schedule-item-toggle">
-                                                <strong class="time highlight">
-                                                    <span class="icon icon-office-24"></span>15:00 - 15:50</strong>
-                                                <h6 class="title">One track sessions
-                                                    <i class="icon icon-arrows-06"></i>
-                                                </h6>
-                                            </a>
-                                            <div id="schedule3_day1_main_time6" class="panel-collapse collapse in schedule-item-body">
-                                                <article>
-                                                    <p class="description">To be announced…</p>
-                                                    <strong class="highlight speaker-name"></strong>
-                                                </article>
-                                            </div>
-                                        </div>
-
-                                        <div class="panel schedule-item">
-                                            <div class="lecture-icon-wrapper">
-                                                <span class="fa fa-coffee"></span>
-                                            </div>
-                                            <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline" class="schedule-item-toggle">
-                                                <strong class="time highlight">
-                                                    <span class="icon icon-office-24"></span>15:50 - 16:30</strong>
-                                                <h6 class="title">Break
-                                                    <i class="icon icon-arrows-06"></i>
-                                                </h6>
-                                            </a>
-                                        </div>
-
-                                        <div class="panel schedule-item">
-                                            <div class="lecture-icon-wrapper">
-                                                <span class="fa fa-microphone"></span>
-                                            </div>
-                                            <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline" href="#schedule3_day1_main_time5" class="schedule-item-toggle">
-                                                <strong class="time highlight">
-                                                    <span class="icon icon-office-24"></span>16:30 - 17:20</strong>
-                                                <h6 class="title">The day after tomorrow: Let the machine do the coding
-                                                    <i class="icon icon-arrows-06"></i>
-                                                </h6>
-                                            </a>
-                                            <div id="schedule3_day1_main_time5" class="panel-collapse collapse in schedule-item-body">
-                                                <article>
-                                                    <p class="description">
-                                                        Programming means suffering - today. The programmer needs to do the typing herself (except for the trivial code snippets that Eclipse can bang out), the machine's job is to nag and reject when there's an error. In particular, a modern type system can be very good at pointing out errors, but the human still needs to tinker with the program to make it shut up. This is in spite of the fact that most of the domain knowledge is already contained in the type definitions and method signatures: Program by Design shows how this can work. Now, if we specify a little bit more, shouldn't the computer be able to write the code? The future of programming or just pipe dream? A new generation of programming languages and IDEs gradually turns this dream into reality: These tools are slowly becoming partners in software development. They make programming more fun, and can cut down dramatically on the error count. In the process, they liberate developers from implementing recurring patterns over and over. Developers can focus on the individual aspects of the software, on properly modelling the domain and on the user experience.
-                                                    </p>
-                                                    <strong class="highlight speaker-name">Nicole Rauch & Michael Sperber</strong>
-                                                </article>
-                                            </div>
-                                        </div>
-
-                                        <div class="panel schedule-item">
-                                            <div class="lecture-icon-wrapper">
-                                                <span class="fa fa-microphone"></span>
-                                            </div>
-                                            <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline" class="schedule-item-toggle">
-                                                <strong class="time highlight">
-                                                    <span class="icon icon-office-24"></span>17:30 - 18:00</strong>
-                                                <h6 class="title">Closing words
-                                                    <i class="icon icon-arrows-06"></i>
-                                                </h6>
-                                            </a>
-                                        </div>
-
-                                        <div class="panel schedule-item">
-                                            <div class="lecture-icon-wrapper">
-                                                <span class="fa fa-beer"></span>
-                                            </div>
-                                            <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline" class="schedule-item-toggle">
-                                                <strong class="time highlight">
-                                                    <span class="icon icon-office-24"></span>19:00 - 23:00</strong>
-                                                <h6 class="title">After
-                                                    <i class="icon icon-arrows-06"></i>
-                                                </h6>
-                                            </a>
-                                        </div>
-                                        <!-- Lecture end -->
-
-                                    </div>
-                                    <!-- Accordion end -->
-
-                                </div>
-                                <!-- Main content end -->
-
-                            </div>
-                            <!-- Second level content end -->
-
-                        </div>
-                        <!-- Day 1 content end -->
-
-                        <!-- Day 2 content start -->
-                        <div id="schedule3_day2" class="tab-pane fade in">
-                            <!--  navigation by room -->
-                            <ul class="nav nav-schedule">
-                                <li class="active">
-                                    <a href="#schedule3_day2_main" data-toggle="tab">Open space</a>
-                                </li>
-                                <li>
-                                    <a href="#schedule3_day2_workshop" data-toggle="tab">Workshops</a>
-                                </li>
-                            </ul>
-                            <!-- Second level content start -->
-                            <div class="tab-content tab-content-schedule">
-
-                                <!-- Main content start -->
-                                <div id="schedule3_day2_main" class="tab-pane fade active in">
-
-                                    <!-- Accordion start -->
-                                    <div class="panel-group" id="schedule3_day2_main_timeline">
-
-                                        <!-- Lecture start -->
-                                        <div class="panel schedule-item">
-                                            <div class="lecture-icon-wrapper">
-                                                <span class="fa fa-question"></span>
-                                            </div>
-                                            <a data-toggle="collapse" data-parent="#schedule3_day2_main_timeline" class="schedule-item-toggle">
-                                                <article>
-                                                    <p class="description">An <strong>open space conference</strong> is a conference format where the agenda is created by the participants, allowing anyone wanting to discuss about a topic to propose it. Then anyone interested in the subject is free to join the discussion.</p>
-                                                </article>
-                                            </a>
-                                        </div>
-                                        <div class="panel schedule-item">
-                                            <div class="lecture-icon-wrapper">
-                                                <span class="fa fa-coffee"></span>
-                                            </div>
-                                            <a data-toggle="collapse" data-parent="#schedule3_day2_main_timeline" class="schedule-item-toggle">
-                                                <strong class="time highlight">
-                                                    <span class="icon icon-office-24"></span>8:30 - 9:00</strong>
-                                                <h6 class="title">Check-in time
-                                                    <i class="icon icon-arrows-06"></i>
-                                                </h6>
-                                            </a>
-                                        </div>
-                                        <div class="panel schedule-item">
-                                            <div class="lecture-icon-wrapper">
-                                                <span class="fa fa-microphone"></span>
-                                            </div>
-                                            <a data-toggle="collapse" data-parent="#schedule3_day2_main_timeline" class="schedule-item-toggle">
-                                                <strong class="time highlight">
-                                                    <span class="icon icon-office-24"></span>9:00 - 9:15</strong>
-                                                <h6 class="title">Opening words
-                                                    <i class="icon icon-arrows-06"></i>
-                                                </h6>
-                                            </a>
-                                        </div>
-                                        <div class="panel schedule-item">
-                                            <div class="lecture-icon-wrapper">
-                                                <span class="fa fa-forumbee"></span>
-                                            </div>
-                                            <a data-toggle="collapse" data-parent="#schedule3_day2_main_timeline" href="#schedule3_day2_main_time1" class="schedule-item-toggle">
-                                                <strong class="time highlight">
-                                                    <span class="icon icon-office-24"></span>9:15 - 9:45</strong>
-                                                <h6 class="title">Market place
-                                                    <i class="icon icon-arrows-06"></i>
-                                                </h6>
-                                            </a>
-                                            <div id="schedule3_day2_main_time1" class="panel-collapse collapse in schedule-item-body">
-                                                <article>
-                                                    <strong class="highlight speaker-name">Arnaud Lemaire</strong>
-                                                </article>
-                                            </div>
-                                        </div>
-                                        <div class="panel schedule-item">
-                                            <div class="lecture-icon-wrapper">
-                                                <span class="fa fa-users"></span>
-                                            </div>
-                                            <a data-toggle="collapse" data-parent="#schedule3_day2_main_timeline" class="schedule-item-toggle">
-                                                <strong class="time highlight">
-                                                    <span class="icon icon-office-24"></span>10:00 - 10:40</strong>
-                                                <h6 class="title">Slot 1
-                                                    <i class="icon icon-arrows-06"></i>
-                                                </h6>
-                                            </a>
-                                        </div>
-                                        <div class="panel schedule-item">
-                                            <div class="lecture-icon-wrapper">
-                                                <span class="fa fa-users"></span>
-                                            </div>
-                                            <a data-toggle="collapse" data-parent="#schedule3_day2_main_timeline" class="schedule-item-toggle">
-                                                <strong class="time highlight">
-                                                    <span class="icon icon-office-24"></span>10:50 - 11:30</strong>
-                                                <h6 class="title">Slot 2
-                                                    <i class="icon icon-arrows-06"></i>
-                                                </h6>
-                                            </a>
-                                        </div>
-                                        <div class="panel schedule-item">
-                                            <div class="lecture-icon-wrapper">
-                                                <span class="fa fa-users"></span>
-                                            </div>
-                                            <a data-toggle="collapse" data-parent="#schedule3_day2_main_timeline" class="schedule-item-toggle">
-                                                <strong class="time highlight">
-                                                    <span class="icon icon-office-24"></span>11:40 - 12:20</strong>
-                                                <h6 class="title">Slot 3
-                                                    <i class="icon icon-arrows-06"></i>
-                                                </h6>
-                                            </a>
-                                        </div>
-                                        <div class="panel schedule-item">
-                                            <div class="lecture-icon-wrapper">
-                                                <span class="fa fa-cutlery"></span>
-                                            </div>
-                                            <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline" class="schedule-item-toggle">
-                                                <strong class="time highlight">
-                                                    <span class="icon icon-office-24"></span>12:20 - 13:40</strong>
-                                                <h6 class="title">Lunch time
-                                                    <i class="icon icon-arrows-06"></i>
-                                                </h6>
-                                            </a>
-                                        </div>
-                                        <div class="panel schedule-item">
-                                            <div class="lecture-icon-wrapper">
-                                                <span class="fa fa-forumbee"></span>
-                                            </div>
-                                            <a data-toggle="collapse" data-parent="#schedule3_day2_main_timeline" href="#schedule3_day2_main_time2" class="schedule-item-toggle">
-                                                <strong class="time highlight">
-                                                    <span class="icon icon-office-24"></span>13:40 - 14:10</strong>
-                                                <h6 class="title">Market place
-                                                    <i class="icon icon-arrows-06"></i>
-                                                </h6>
-                                            </a>
-                                            <div id="schedule3_day2_main_time2" class="panel-collapse collapse in schedule-item-body">
-                                                <article>
-                                                    <strong class="highlight speaker-name">Arnaud Lemaire</strong>
-                                                </article>
-                                            </div>
-                                        </div>
-                                        <div class="panel schedule-item">
-                                            <div class="lecture-icon-wrapper">
-                                                <span class="fa fa-users"></span>
-                                            </div>
-                                            <a data-toggle="collapse" data-parent="#schedule3_day2_main_timeline" class="schedule-item-toggle">
-                                                <strong class="time highlight">
-                                                    <span class="icon icon-office-24"></span>14:20 - 15:00</strong>
-                                                <h6 class="title">Slot 4
-                                                    <i class="icon icon-arrows-06"></i>
-                                                </h6>
-                                            </a>
-                                        </div>
-                                        <div class="panel schedule-item">
-                                            <div class="lecture-icon-wrapper">
-                                                <span class="fa fa-users"></span>
-                                            </div>
-                                            <a data-toggle="collapse" data-parent="#schedule3_day2_main_timeline" class="schedule-item-toggle">
-                                                <strong class="time highlight">
-                                                    <span class="icon icon-office-24"></span>15:10 - 15:50</strong>
-                                                <h6 class="title">Slot 5
-                                                    <i class="icon icon-arrows-06"></i>
-                                                </h6>
-                                            </a>
-                                        </div>
-                                        <div class="panel schedule-item">
-                                            <div class="lecture-icon-wrapper">
-                                                <span class="fa fa-users"></span>
-                                            </div>
-                                            <a data-toggle="collapse" data-parent="#schedule3_day2_main_timeline" class="schedule-item-toggle">
-                                                <strong class="time highlight">
-                                                    <span class="icon icon-office-24"></span>16:00 - 16:40</strong>
-                                                <h6 class="title">Slot 6
-                                                    <i class="icon icon-arrows-06"></i>
-                                                </h6>
-                                            </a>
-                                        </div>
-                                        <div class="panel schedule-item">
-                                            <div class="lecture-icon-wrapper">
-                                                <span class="fa fa-users"></span>
-                                            </div>
-                                            <a data-toggle="collapse" data-parent="#schedule3_day2_main_timeline" class="schedule-item-toggle">
-                                                <strong class="time highlight">
-                                                    <span class="icon icon-office-24"></span>16:50 - 17:30</strong>
-                                                <h6 class="title">Slot 7
-                                                    <i class="icon icon-arrows-06"></i>
-                                                </h6>
-                                            </a>
-                                        </div>
-                                        <div class="panel schedule-item">
-                                            <div class="lecture-icon-wrapper">
-                                                <span class="fa fa-microphone"></span>
-                                            </div>
-                                            <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline" class="schedule-item-toggle">
-                                                <strong class="time highlight">
-                                                    <span class="icon icon-office-24"></span>17:40 - 18:00</strong>
-                                                <h6 class="title">Closing words
-                                                    <i class="icon icon-arrows-06"></i>
-                                                </h6>
-                                            </a>
-                                        </div>
-                                        <!-- Lecture end -->
-
-                                    </div>
-                                    <!-- Accordion end -->
-
-                                </div>
-                                <!-- Main content end -->
-
-                                <div id="schedule3_day2_workshop" class="tab-pane fade active in">
+                                    <!-- Lecture start -->
                                     <div class="panel schedule-item">
                                         <div class="lecture-icon-wrapper">
-                                            <span class="fa fa-cloud"></span>
+                                            <span class="fa fa-coffee"></span>
                                         </div>
-                                        <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline" href="#schedule3_day1_main_time1" class="schedule-item-toggle">
+                                        <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline"
+                                           class="schedule-item-toggle">
                                             <strong class="time highlight">
-                                                <span class="icon icon-office-24"></span>9:15 - 12:20</strong>
-                                            <h6 class="title">Discovering event storming
+                                                <span class="icon icon-office-24"></span>8:30 - 9:00</strong>
+                                            <h6 class="title">Check-in time
                                                 <i class="icon icon-arrows-06"></i>
                                             </h6>
                                         </a>
-                                        <div id="schedule3_day1_main_time1" class="panel-collapse collapse in schedule-item-body">
+                                    </div>
+                                    <div class="panel schedule-item">
+                                        <div class="lecture-icon-wrapper">
+                                            <span class="fa fa-microphone"></span>
+                                        </div>
+                                        <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline"
+                                           class="schedule-item-toggle" href="#schedule3_day1_main_keynote">
+                                            <strong class="time highlight">
+                                                <span class="icon icon-office-24"></span>9:00 - 9:20</strong>
+                                            <h6 class="title">Keynote
+                                                <i class="icon icon-arrows-06"></i>
+                                            </h6>
+                                        </a>
+                                        <div id="schedule3_day1_main_keynote"
+                                             class="panel-collapse collapse in schedule-item-body">
                                             <article>
-                                                <p class="description">
-                                                    Let's explore a fictious business domain using the event storming approach, made famous by Alberto Brondolini.
-                                                </p>
-                                                <strong class="highlight speaker-name">Maxime SANGLAN-CHARLIER</strong>
+                                                <p class="description">An exploration among cognitive biases, to see how
+                                                    they influence the way we think and act.</p>
+                                                <strong class="highlight speaker-name">MARINE CAMPEDEL</strong>
                                             </article>
                                         </div>
                                     </div>
-
                                     <div class="panel schedule-item">
                                         <div class="lecture-icon-wrapper">
-                                            <span class="fa fa-keyboard-o"></span>
+                                            <span class="fa fa-microphone"></span>
                                         </div>
-                                        <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline" href="#schedule3_day1_main_time1" class="schedule-item-toggle">
+                                        <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline"
+                                           href="#schedule3_day1_main_time1" class="schedule-item-toggle">
                                             <strong class="time highlight">
-                                                <span class="icon icon-office-24"></span>13:40 - 17:30</strong>
-                                            <h6 class="title">Kebab kata: Fight the system making your code sad!
+                                                <span class="icon icon-office-24"></span>9:30 - 10:20</strong>
+                                            <h6 class="title">The systemic of the Liskov substitution principle
                                                 <i class="icon icon-arrows-06"></i>
                                             </h6>
                                         </a>
-                                        <div id="schedule3_day1_main_time1" class="panel-collapse collapse in schedule-item-body">
+                                        <div id="schedule3_day1_main_time1"
+                                             class="panel-collapse collapse in schedule-item-body">
                                             <article>
                                                 <p class="description">
-                                                        Try to create a code you will not consider "legacy".
-
-                                                        I'll play the role of your client and use around 20 techniques to make you fail.
-
-                                                        You will fail.
-
-                                                        We'll then discuss what techniques I have used, how they happen in real life, how to fight them in your project.
-
-                                                        All languages welcome. Bring your own laptop with your environment. We'll split into small teams.
+                                                    The Liskov Substitution Principle: the least known and most
+                                                    frequently violated of all S.O.L.I.D.!
+                                                    <br><br>
+                                                    Let’s explore together what it is, why you should care, how to
+                                                    detect violations, how to stop violating, what is co-variance and
+                                                    contra-variance (What is the In/Out of C#, the Super/Extends of
+                                                    Java, the +/- of Scala).
+                                                    <br><br>
+                                                    But above all: Let’s see that the essence of Liskov is the essence
+                                                    of Object Orientation itself: Systemics.
+                                                    <br><br>
+                                                    Let’s learn to see our codebase as a System.
                                                 </p>
                                                 <strong class="highlight speaker-name">Romeu MOURA</strong>
                                             </article>
                                         </div>
                                     </div>
 
+                                    <div class="panel schedule-item">
+                                        <div class="lecture-icon-wrapper">
+                                            <span class="fa fa-coffee"></span>
+                                        </div>
+                                        <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline"
+                                           class="schedule-item-toggle">
+                                            <strong class="time highlight">
+                                                <span class="icon icon-office-24"></span>10:20 - 10:50</strong>
+                                            <h6 class="title">Break
+                                                <i class="icon icon-arrows-06"></i>
+                                            </h6>
+                                        </a>
+                                    </div>
+
+                                    <div class="panel schedule-item">
+                                        <div class="lecture-icon-wrapper">
+                                            <span class="fa fa-microphone"></span>
+                                        </div>
+                                        <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline"
+                                           href="#schedule3_day1_main_time2" class="schedule-item-toggle">
+                                            <strong class="time highlight">
+                                                <span class="icon icon-office-24"></span>10:50 - 11:40</strong>
+                                            <h6 class="title">Smalltalk in 2017
+                                                <i class="icon icon-arrows-06"></i>
+                                            </h6>
+                                        </a>
+                                        <div id="schedule3_day1_main_time2"
+                                             class="panel-collapse collapse in schedule-item-body">
+                                            <article>
+                                                <p class="description"></p>
+                                                Thanks to
+                                                <a href="http://pharo.org/">project pharo</a>, Smalltalk is still very
+                                                much alive. In this session,
+                                                with a mix a live coding and a little bit of theory, we will see what
+                                                SmallTalk has to teach us in 2017 :
+                                                <ul>
+                                                    <li>why so many ideas (TDD, refactoring) emerged from it</li>
+                                                    <li>what makes it so special</li>
+                                                    <li>what to expect for the future of pharo</li>
+                                                </ul>
+                                                <strong class="highlight speaker-name">Christophe DEMAREY</strong>
+                                            </article>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel schedule-item">
+                                        <div class="lecture-icon-wrapper">
+                                            <span class="fa fa-microphone"></span>
+                                        </div>
+                                        <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline"
+                                           href="#schedule3_day1_main_time3" class="schedule-item-toggle">
+                                            <strong class="time highlight">
+                                                <span class="icon icon-office-24"></span>11:50 - 12:40</strong>
+                                            <h6 class="title">From Front to Back: Homomorphic Event Sourcing
+                                                <i class="icon icon-arrows-06"></i>
+                                            </h6>
+                                        </a>
+                                        <div id="schedule3_day1_main_time3"
+                                             class="panel-collapse collapse in schedule-item-body">
+                                            <article>
+                                                <p class="description">
+                                                    Event Sourcing is a way to structure a business domain model, where
+                                                    influences from the outside world are regarded as Commands
+                                                    (
+                                                    <em>“Buy a ticket for a concert”</em>) that internally trigger
+                                                    Events
+                                                    which are the system’s response to the corresponding Commands (
+                                                    <em>“Concert ticket was bought by ...”</em>).
+                                                    <br/>
+                                                    <br/> At each point in time, the state of the system can be fully
+                                                    reconstructed
+                                                    by looking just at the Events. This approach, coupled with CQRS and
+                                                    other Domain-Driven Design techniques, has a number of advantages:
+                                                    It yields a clean separation of state, interactions and storage;
+                                                    it establishes a direct way to express business domain concepts in
+                                                    terms of interactions; it is composable...
+                                                    <br/>
+                                                    <br/> On the other hand, events have always been at the core of User
+                                                    Interfaces,
+                                                    which typically consist of an event loop that pumps events from the
+                                                    underlying system and injects back requests to redraw parts of the
+                                                    GUI. Modern UI frameworks like React/Redux or Elm are actually built
+                                                    on this abstraction: In Elm, Commands trigger an effect on the
+                                                    system,
+                                                    and the resulting Events update the state.
+                                                    <br/>
+                                                    <br/> This session proposes to fully embrace Event Sourcing in both
+                                                    front-end
+                                                    and back-end. It shows how to bridge the gap between both worlds
+                                                    by applying morphisms between the language of the front-end and the
+                                                    language of the back-end. We will demonstrate this integration on
+                                                    a small game built with a React UI and a Haskell backend, and in
+                                                    the process show how this approach fits nicely with Functional
+                                                    Programming
+                                                    languages.
+                                                </p>
+                                                <strong class="highlight speaker-name">Nicole Rauch & Arnaud
+                                                    Bailly</strong>
+                                            </article>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel schedule-item">
+                                        <div class="lecture-icon-wrapper">
+                                            <span class="fa fa-cutlery"></span>
+                                        </div>
+                                        <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline"
+                                           class="schedule-item-toggle">
+                                            <strong class="time highlight">
+                                                <span class="icon icon-office-24"></span>12:40 - 14:00</strong>
+                                            <h6 class="title">Lunch time
+                                                <i class="icon icon-arrows-06"></i>
+                                            </h6>
+                                        </a>
+                                    </div>
+
+                                    <div class="panel schedule-item">
+                                        <div class="lecture-icon-wrapper">
+                                            <span class="fa fa-microphone"></span>
+                                        </div>
+                                        <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline"
+                                           href="#schedule3_day1_main_time4" class="schedule-item-toggle">
+                                            <strong class="time highlight">
+                                                <span class="icon icon-office-24"></span>14:00 - 14:50</strong>
+                                            <h6 class="title">All my team is using rust. HALP!
+                                                <i class="icon icon-arrows-06"></i>
+                                            </h6>
+                                        </a>
+                                        <div id="schedule3_day1_main_time4"
+                                             class="panel-collapse collapse in schedule-item-body">
+                                            <article>
+                                                <p class="description">Something strange happened at Clever Cloud:
+                                                    everybody has started using rust, little by little. Many greenfield
+                                                    projects are using rust. That's not to say we've stopped using
+                                                    scala, java, or ruby (and even a bit of go and haskell). As a CTO,
+                                                    how do I keep complexity and language diversity in check? How do I
+                                                    choose which language to use for projects? Do I let others
+                                                    choose?</p>
+                                                <strong class="highlight speaker-name">Clément Delafargue</strong>
+                                            </article>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel schedule-item">
+                                        <div class="lecture-icon-wrapper">
+                                            <span class="fa fa-microphone"></span>
+                                        </div>
+                                        <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline"
+                                           href="#schedule3_day1_main_time6" class="schedule-item-toggle">
+                                            <strong class="time highlight">
+                                                <span class="icon icon-office-24"></span>15:00 - 15:50</strong>
+                                            <h6 class="title">One track sessions
+                                                <i class="icon icon-arrows-06"></i>
+                                            </h6>
+                                        </a>
+                                        <div id="schedule3_day1_main_time6"
+                                             class="panel-collapse collapse in schedule-item-body">
+                                            <article>
+                                                <p class="description">To be announced…</p>
+                                                <strong class="highlight speaker-name"></strong>
+                                            </article>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel schedule-item">
+                                        <div class="lecture-icon-wrapper">
+                                            <span class="fa fa-coffee"></span>
+                                        </div>
+                                        <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline"
+                                           class="schedule-item-toggle">
+                                            <strong class="time highlight">
+                                                <span class="icon icon-office-24"></span>15:50 - 16:30</strong>
+                                            <h6 class="title">Break
+                                                <i class="icon icon-arrows-06"></i>
+                                            </h6>
+                                        </a>
+                                    </div>
+
+                                    <div class="panel schedule-item">
+                                        <div class="lecture-icon-wrapper">
+                                            <span class="fa fa-microphone"></span>
+                                        </div>
+                                        <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline"
+                                           href="#schedule3_day1_main_time5" class="schedule-item-toggle">
+                                            <strong class="time highlight">
+                                                <span class="icon icon-office-24"></span>16:30 - 17:20</strong>
+                                            <h6 class="title">The day after tomorrow: Let the machine do the coding
+                                                <i class="icon icon-arrows-06"></i>
+                                            </h6>
+                                        </a>
+                                        <div id="schedule3_day1_main_time5"
+                                             class="panel-collapse collapse in schedule-item-body">
+                                            <article>
+                                                <p class="description">
+                                                    Programming means suffering - today. The programmer needs to do the
+                                                    typing herself (except for the trivial code snippets that Eclipse
+                                                    can bang out), the machine's job is to nag and reject when there's
+                                                    an error. In particular, a modern type system can be very good at
+                                                    pointing out errors, but the human still needs to tinker with the
+                                                    program to make it shut up. This is in spite of the fact that most
+                                                    of the domain knowledge is already contained in the type definitions
+                                                    and method signatures: Program by Design shows how this can work.
+                                                    Now, if we specify a little bit more, shouldn't the computer be able
+                                                    to write the code? The future of programming or just pipe dream? A
+                                                    new generation of programming languages and IDEs gradually turns
+                                                    this dream into reality: These tools are slowly becoming partners in
+                                                    software development. They make programming more fun, and can cut
+                                                    down dramatically on the error count. In the process, they liberate
+                                                    developers from implementing recurring patterns over and over.
+                                                    Developers can focus on the individual aspects of the software, on
+                                                    properly modelling the domain and on the user experience.
+                                                </p>
+                                                <strong class="highlight speaker-name">Nicole Rauch & Michael
+                                                    Sperber</strong>
+                                            </article>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel schedule-item">
+                                        <div class="lecture-icon-wrapper">
+                                            <span class="fa fa-microphone"></span>
+                                        </div>
+                                        <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline"
+                                           class="schedule-item-toggle">
+                                            <strong class="time highlight">
+                                                <span class="icon icon-office-24"></span>17:30 - 18:00</strong>
+                                            <h6 class="title">Closing words
+                                                <i class="icon icon-arrows-06"></i>
+                                            </h6>
+                                        </a>
+                                    </div>
+
+                                    <div class="panel schedule-item">
+                                        <div class="lecture-icon-wrapper">
+                                            <span class="fa fa-beer"></span>
+                                        </div>
+                                        <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline"
+                                           class="schedule-item-toggle">
+                                            <strong class="time highlight">
+                                                <span class="icon icon-office-24"></span>19:00 - 23:00</strong>
+                                            <h6 class="title">After
+                                                <i class="icon icon-arrows-06"></i>
+                                            </h6>
+                                        </a>
+                                    </div>
+                                    <!-- Lecture end -->
+
                                 </div>
+                                <!-- Accordion end -->
+
                             </div>
-                            <!-- Second level content end -->
+                            <!-- Main content end -->
 
                         </div>
-                        <!-- Day 2 content end -->
+                        <!-- Second level content end -->
 
                     </div>
-                    <!-- First level content end -->
+                    <!-- Day 1 content end -->
+
+                    <!-- Day 2 content start -->
+                    <div id="schedule3_day2" class="tab-pane fade in">
+                        <!--  navigation by room -->
+                        <ul class="nav nav-schedule">
+                            <li class="active">
+                                <a href="#schedule3_day2_main" data-toggle="tab">Open space</a>
+                            </li>
+                            <li>
+                                <a href="#schedule3_day2_workshop" data-toggle="tab">Workshops</a>
+                            </li>
+                        </ul>
+                        <!-- Second level content start -->
+                        <div class="tab-content tab-content-schedule">
+
+                            <!-- Main content start -->
+                            <div id="schedule3_day2_main" class="tab-pane fade active in">
+
+                                <!-- Accordion start -->
+                                <div class="panel-group" id="schedule3_day2_main_timeline">
+
+                                    <!-- Lecture start -->
+                                    <div class="panel schedule-item">
+                                        <div class="lecture-icon-wrapper">
+                                            <span class="fa fa-question"></span>
+                                        </div>
+                                        <a data-toggle="collapse" data-parent="#schedule3_day2_main_timeline"
+                                           class="schedule-item-toggle">
+                                            <article>
+                                                <p class="description">An <strong>open space conference</strong> is a
+                                                    conference format where the agenda is created by the participants,
+                                                    allowing anyone wanting to discuss about a topic to propose it. Then
+                                                    anyone interested in the subject is free to join the discussion.</p>
+                                            </article>
+                                        </a>
+                                    </div>
+                                    <div class="panel schedule-item">
+                                        <div class="lecture-icon-wrapper">
+                                            <span class="fa fa-coffee"></span>
+                                        </div>
+                                        <a data-toggle="collapse" data-parent="#schedule3_day2_main_timeline"
+                                           class="schedule-item-toggle">
+                                            <strong class="time highlight">
+                                                <span class="icon icon-office-24"></span>8:30 - 9:00</strong>
+                                            <h6 class="title">Check-in time
+                                                <i class="icon icon-arrows-06"></i>
+                                            </h6>
+                                        </a>
+                                    </div>
+                                    <div class="panel schedule-item">
+                                        <div class="lecture-icon-wrapper">
+                                            <span class="fa fa-microphone"></span>
+                                        </div>
+                                        <a data-toggle="collapse" data-parent="#schedule3_day2_main_timeline"
+                                           class="schedule-item-toggle">
+                                            <strong class="time highlight">
+                                                <span class="icon icon-office-24"></span>9:00 - 9:15</strong>
+                                            <h6 class="title">Opening words
+                                                <i class="icon icon-arrows-06"></i>
+                                            </h6>
+                                        </a>
+                                    </div>
+                                    <div class="panel schedule-item">
+                                        <div class="lecture-icon-wrapper">
+                                            <span class="fa fa-forumbee"></span>
+                                        </div>
+                                        <a data-toggle="collapse" data-parent="#schedule3_day2_main_timeline"
+                                           href="#schedule3_day2_main_time1" class="schedule-item-toggle">
+                                            <strong class="time highlight">
+                                                <span class="icon icon-office-24"></span>9:15 - 9:45</strong>
+                                            <h6 class="title">Market place
+                                                <i class="icon icon-arrows-06"></i>
+                                            </h6>
+                                        </a>
+                                        <div id="schedule3_day2_main_time1"
+                                             class="panel-collapse collapse in schedule-item-body">
+                                            <article>
+                                                <p class="description">During the marketplace, all ideas are gathered,
+                                                    exposed and scheduled in the available slots. </p>
+                                                <strong class="highlight speaker-name">Arnaud Lemaire</strong>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="panel schedule-item">
+                                        <div class="lecture-icon-wrapper">
+                                            <span class="fa fa-users"></span>
+                                        </div>
+                                        <a data-toggle="collapse" data-parent="#schedule3_day2_main_timeline"
+                                           href="#schedule3_day2_main_time2" class="schedule-item-toggle">
+                                            <strong class="time highlight">
+                                                <span class="icon icon-office-24"></span>10:00 - 12:20</strong>
+                                            <h6 class="title">Open space sessions
+                                                <i class="icon icon-arrows-06"></i>
+                                            </h6>
+                                        </a>
+                                        <div id="schedule3_day2_main_time2"
+                                             class="panel-collapse collapse in schedule-item-body">
+                                            <article>
+                                                <p class="description">
+                                                    Each session is 40mn long.
+                                                <ul>
+                                                    <li>Whoever comes is the right people</li>
+                                                    <li>Whenever it starts is the right time</li>
+                                                    <li>Wherever it is, is the right place</li>
+                                                    <li>Whatever happens is the only thing that could have, be prepared to be surprised!</li>
+                                                    <li>When it's over, it's over </li>
+                                                </ul>
+                                                </p>
+                                            </article>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel schedule-item">
+                                        <div class="lecture-icon-wrapper">
+                                            <span class="fa fa-cutlery"></span>
+                                        </div>
+                                        <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline"
+                                           class="schedule-item-toggle">
+                                            <strong class="time highlight">
+                                                <span class="icon icon-office-24"></span>12:20 - 13:40</strong>
+                                            <h6 class="title">Lunch time
+                                                <i class="icon icon-arrows-06"></i>
+                                            </h6>
+                                        </a>
+                                    </div>
+                                    <div class="panel schedule-item">
+                                        <div class="lecture-icon-wrapper">
+                                            <span class="fa fa-forumbee"></span>
+                                        </div>
+                                        <a data-toggle="collapse" data-parent="#schedule3_day2_main_timeline"
+                                           href="#schedule3_day2_main_time3" class="schedule-item-toggle">
+                                            <strong class="time highlight">
+                                                <span class="icon icon-office-24"></span>13:40 - 14:10</strong>
+                                            <h6 class="title">Market place
+                                                <i class="icon icon-arrows-06"></i>
+                                            </h6>
+                                        </a>
+                                        <div id="schedule3_day2_main_time3"
+                                             class="panel-collapse collapse in schedule-item-body">
+                                            <article>
+                                                <p class="description">During the marketplace, all ideas are gathered,
+                                                    exposed and scheduled in the available slots. </p>
+                                                <strong class="highlight speaker-name">Arnaud Lemaire</strong>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="panel schedule-item">
+                                        <div class="lecture-icon-wrapper">
+                                            <span class="fa fa-users"></span>
+                                        </div>
+                                        <a data-toggle="collapse" data-parent="#schedule3_day2_main_timeline"
+                                           class="schedule-item-toggle" href="#schedule3_day2_main_time4">
+                                            <strong class="time highlight">
+                                                <span class="icon icon-office-24"></span>14:20 - 17:30</strong>
+                                            <h6 class="title">Open space sessions
+                                                <i class="icon icon-arrows-06"></i>
+                                            </h6>
+                                        </a>
+                                        <div id="schedule3_day2_main_time4"
+                                             class="panel-collapse collapse in schedule-item-body">
+                                            <article>
+                                                <p class="description">
+                                                    Each session is 40mn long.
+                                                <ul>
+                                                    <li>Whoever comes is the right people</li>
+                                                    <li>Whenever it starts is the right time</li>
+                                                    <li>Wherever it is, is the right place</li>
+                                                    <li>Whatever happens is the only thing that could have, be prepared to be surprised!</li>
+                                                    <li>When it's over, it's over </li>
+                                                </ul>
+                                                </p>
+                                            </article>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel schedule-item">
+                                        <div class="lecture-icon-wrapper">
+                                            <span class="fa fa-microphone"></span>
+                                        </div>
+                                        <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline"
+                                           class="schedule-item-toggle">
+                                            <strong class="time highlight">
+                                                <span class="icon icon-office-24"></span>17:40 - 18:00</strong>
+                                            <h6 class="title">Closing words
+                                                <i class="icon icon-arrows-06"></i>
+                                            </h6>
+                                        </a>
+                                    </div>
+                                    <!-- Lecture end -->
+
+                                </div>
+                                <!-- Accordion end -->
+
+                            </div>
+                            <!-- Main content end -->
+
+                            <div id="schedule3_day2_workshop" class="tab-pane fade in">
+                                <div class="panel schedule-item">
+                                    <div class="lecture-icon-wrapper">
+                                        <span class="fa fa-cloud"></span>
+                                    </div>
+                                    <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline"
+                                       href="#schedule3_day1_main_time1" class="schedule-item-toggle">
+                                        <strong class="time highlight">
+                                            <span class="icon icon-office-24"></span>9:15 - 12:20</strong>
+                                        <h6 class="title">Discovering event storming
+                                            <i class="icon icon-arrows-06"></i>
+                                        </h6>
+                                    </a>
+                                    <div id="schedule3_day1_main_time1"
+                                         class="panel-collapse collapse in schedule-item-body">
+                                        <article>
+                                            <p class="description">
+                                                Let's explore a fictious business domain using the event storming
+                                                approach, made famous by Alberto Brondolini.
+                                            </p>
+                                            <strong class="highlight speaker-name">Maxime SANGLAN-CHARLIER</strong>
+                                        </article>
+                                    </div>
+                                </div>
+
+                                <div class="panel schedule-item">
+                                    <div class="lecture-icon-wrapper">
+                                        <span class="fa fa-keyboard-o"></span>
+                                    </div>
+                                    <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline"
+                                       href="#schedule3_day1_main_time1" class="schedule-item-toggle">
+                                        <strong class="time highlight">
+                                            <span class="icon icon-office-24"></span>13:40 - 17:30</strong>
+                                        <h6 class="title">Kebab kata: Fight the system making your code sad!
+                                            <i class="icon icon-arrows-06"></i>
+                                        </h6>
+                                    </a>
+                                    <div id="schedule3_day1_main_time1"
+                                         class="panel-collapse collapse in schedule-item-body">
+                                        <article>
+                                            <p class="description">
+                                                Try to create a code you will not consider "legacy".
+
+                                                I'll play the role of your client and use around 20 techniques to make
+                                                you fail.
+
+                                                You will fail.
+
+                                                We'll then discuss what techniques I have used, how they happen in real
+                                                life, how to fight them in your project.
+
+                                                All languages welcome. Bring your own laptop with your environment.
+                                                We'll split into small teams.
+                                            </p>
+                                            <strong class="highlight speaker-name">Romeu MOURA</strong>
+                                        </article>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- Second level content end -->
+
+                    </div>
+                    <!-- Day 2 content end -->
 
                 </div>
-                <!-- Schedule end -->
+                <!-- First level content end -->
+
+            </div>
+            <!-- Schedule end -->
+        </div>
+    </div>
+</section>
+
+<section id="register" class="section overlay overlay-clr bg-cover bg4 light-text align-center">
+    <div class="container">
+        <h2>Register to nCrafts Bordeaux now!</h2>
+        <br/>
+        <br/>
+
+        <a href="https://checkout.eventlama.com/#/events/newcrafts-bordeaux/tickets" class="btn btn-lg btn-outline">GET
+            YOUR TICKET</a>
+    </div>
+</section>
+
+<section id="gallery" class="section align-center">
+    <div class="container">
+        <span class="icon section-icon icon-badges-votes-01"></span>
+        <h3>Previous events</h3>
+        <p class="text-alt">The Bordeaux edition is the first of its kind, but you can check previous editions of
+            <span class="highlight">nCraft Paris</span>
+        </p>
+        <br/>
+
+        <div class="sponsors">
+            <div class="sponsor inline">
+                <a href="http://ncrafts.io/2017" target="_blank" title="nCraft">
+                    <img height="200px" src="assets/img/gallery/ncraft-2017.png" alt="">
+                </a>
+            </div>
+            <div class="sponsor inline">
+                <a href="http://ncrafts.io/2016" target="_blank" title="nCraft">
+                    <img height="200px" src="assets/img/gallery/ncraft-2016.png" alt="">
+                </a>
+            </div>
+            <div class="sponsor inline">
+                <a href="http://ncrafts.io/2015" target="_blank" title="nCraft">
+                    <img height="200px" src="assets/img/gallery/ncraft-2015.png" alt="">
+                </a>
+            </div>
+            <div class="sponsor inline">
+                <a href="http://ncrafts.io/2014" target="_blank" title="nCraft">
+                    <img height="200px" src="assets/img/gallery/ncraft-2014.png" alt="">
+                </a>
             </div>
         </div>
-    </section>
 
-    <section id="register" class="section overlay overlay-clr bg-cover bg4 light-text align-center">
-        <div class="container">
-            <h2>Register to nCrafts Bordeaux now!</h2>
-            <br/>
-            <br/>
+    </div>
+</section>
 
-            <a href="https://checkout.eventlama.com/#/events/newcrafts-bordeaux/tickets" class="btn btn-lg btn-outline">GET YOUR TICKET</a>
-        </div>
-    </section>
+<section id="sponsors" class="section align-center">
+    <div class="container">
+        <span class="icon section-icon icon-documents-bookmarks-12"></span>
+        <h3>Sponsors</h3>
+        <p class="text-alt">companies that makes this
+            <span class="highlight">event</span> possible</p>
+        <br/>
+        <br/>
 
-    <section id="gallery" class="section align-center">
-        <div class="container">
-            <span class="icon section-icon icon-badges-votes-01"></span>
-            <h3>Previous events</h3>
-            <p class="text-alt">The Bordeaux edition is the first of its kind, but you can check previous editions of
-                <span class="highlight">nCraft Paris</span>
-            </p>
-            <br/>
-
-            <div class="sponsors">
-                <div class="sponsor inline">
-                    <a href="http://ncrafts.io/2017" target="_blank" title="nCraft">
-                        <img height="200px" src="assets/img/gallery/ncraft-2017.png" alt="">
-                    </a>
-                </div>
-                <div class="sponsor inline">
-                    <a href="http://ncrafts.io/2016" target="_blank" title="nCraft">
-                        <img height="200px" src="assets/img/gallery/ncraft-2016.png" alt="">
-                    </a>
-                </div>
-                <div class="sponsor inline">
-                    <a href="http://ncrafts.io/2015" target="_blank" title="nCraft">
-                        <img height="200px" src="assets/img/gallery/ncraft-2015.png" alt="">
-                    </a>
-                </div>
-                <div class="sponsor inline">
-                    <a href="http://ncrafts.io/2014" target="_blank" title="nCraft">
-                        <img height="200px" src="assets/img/gallery/ncraft-2014.png" alt="">
-                    </a>
-                </div>
+        <div class="sponsors">
+            <div class="sponsor inline">
+                <a href="http://arpinum.fr" target="_blank" title="Arpinum">
+                    <img height="100px" src="assets/img/sponsors/logo-arpinum.png" alt="">
+                </a>
             </div>
-
-        </div>
-    </section>
-
-    <section id="sponsors" class="section align-center">
-        <div class="container">
-            <span class="icon section-icon icon-documents-bookmarks-12"></span>
-            <h3>Sponsors</h3>
-            <p class="text-alt">companies that makes this
-                <span class="highlight">event</span> possible</p>
-            <br/>
-            <br/>
-
-            <div class="sponsors">
-                <div class="sponsor inline">
-                    <a href="http://arpinum.fr" target="_blank" title="Arpinum">
-                        <img height="100px" src="assets/img/sponsors/logo-arpinum.png" alt="">
-                    </a>
-                </div>
-                <div class="sponsor inline">
-                    <a href="http://okiwi.org" target="_blank" title="Okiwi">
-                        <img height="120px" src="assets/img/sponsors/logo-okiwi.png" alt="">
-                    </a>
-                </div>
-                <div class="sponsor inline">
-                    <a href="http://www.syadem.fr" target="_blank" title="Syadem">
-                        <img height="100px" src="assets/img/sponsors/logo-syadem.png" alt="">
-                    </a>
-                </div>
-                <div class="sponsor inline">
-                    <a href="http://www.sudouest.fr" target="_blank" title="Sud-Ouest">
-                        <img height="120px" src="assets/img/sponsors/logo-sudouest.jpg" alt="">
-                    </a>
-                </div>
-                <div class="sponsor inline">
-                    <a href="http://www.arolla.fr" target="_blank" title="Arolla">
-                        <img height="120px" src="assets/img/sponsors/logo-arolla.png" alt="">
-                    </a>
-                </div>
+            <div class="sponsor inline">
+                <a href="http://okiwi.org" target="_blank" title="Okiwi">
+                    <img height="120px" src="assets/img/sponsors/logo-okiwi.png" alt="">
+                </a>
             </div>
-            <p class="text-alt">More to be announced...</p>
-        </div>
-    </section>
-
-    <section id="location" class="section align-center">
-        <div class="container">
-            <span class="icon section-icon icon-realestate-living-12"></span>
-            <h3>Location</h3>
-            <p class="text-alt">The event will take place at
-                <span class="highlight">Cap Sciences</span> — Hangar 20, Quai de Bacalan, 33300 Bordeaux
-            </p>
-            <br/>
-            <br/>
-            <div class="row gallery">
-                <a href="#" class="gallery-item gallery-thumb-link" data-modal-link="1">
-                    <img src="assets/img/gallery/bordeaux_1-thumb.jpg" alt="">
+            <div class="sponsor inline">
+                <a href="http://www.syadem.fr" target="_blank" title="Syadem">
+                    <img height="100px" src="assets/img/sponsors/logo-syadem.png" alt="">
                 </a>
-                <a href="#" class="gallery-item gallery-thumb-link" data-modal-link="2">
-                    <img src="assets/img/gallery/bordeaux_2-thumb.jpg" alt="">
+            </div>
+            <div class="sponsor inline">
+                <a href="http://www.sudouest.fr" target="_blank" title="Sud-Ouest">
+                    <img height="120px" src="assets/img/sponsors/logo-sudouest.jpg" alt="">
                 </a>
-                <a href="#" class="gallery-item gallery-thumb-link" data-modal-link="3">
-                    <img src="assets/img/gallery/bordeaux_3-thumb.jpg" alt="">
-                </a>
-                <a href="#" class="gallery-item gallery-thumb-link" data-modal-link="4">
-                    <img src="assets/img/gallery/bordeaux_4-thumb.jpg" alt="">
-                </a>
-                <a href="#" class="gallery-item gallery-thumb-link" data-modal-link="5">
-                    <img src="assets/img/gallery/bordeaux_5-thumb.jpg" alt="">
-                </a>
-                <a href="#" class="gallery-item gallery-thumb-link" data-modal-link="6">
-                    <img src="assets/img/gallery/bordeaux_6-thumb.jpg" alt="">
+            </div>
+            <div class="sponsor inline">
+                <a href="http://www.arolla.fr" target="_blank" title="Arolla">
+                    <img height="120px" src="assets/img/sponsors/logo-arolla.png" alt="">
                 </a>
             </div>
         </div>
-    </section>
+        <p class="text-alt">More to be announced...</p>
+    </div>
+</section>
 
-    <section id="contacts">
-        <div class="contacts-wrapper">
-            <div id="contacts-map" class="map" data-settings="map-settings.json" style="height:560px;"></div>
-
-            <div class="container contacts-on-map-container">
-                <div class="contacts-on-map">
-                    <h3>Cap Sciences</h3>
-
-                    <ul class="list">
-                        <li>
-                            <i class="fa fa-map-marker"></i>Hangar 20, Quai de Bacalan — Bordeaux</li>
-                        <li>
-                            <i class="fa fa-envelope"></i>info@ncrafts.io</li>
-                        <li>
-                            <i class="fa fa-clock-o"></i>9:00 - 18:00</li>
-                    </ul>
-                </div>
-            </div>
+<section id="location" class="section align-center">
+    <div class="container">
+        <span class="icon section-icon icon-realestate-living-12"></span>
+        <h3>Location</h3>
+        <p class="text-alt">The event will take place at
+            <span class="highlight">Cap Sciences</span> — Hangar 20, Quai de Bacalan, 33300 Bordeaux
+        </p>
+        <br/>
+        <br/>
+        <div class="row gallery">
+            <a href="#" class="gallery-item gallery-thumb-link" data-modal-link="1">
+                <img src="assets/img/gallery/bordeaux_1-thumb.jpg" alt="">
+            </a>
+            <a href="#" class="gallery-item gallery-thumb-link" data-modal-link="2">
+                <img src="assets/img/gallery/bordeaux_2-thumb.jpg" alt="">
+            </a>
+            <a href="#" class="gallery-item gallery-thumb-link" data-modal-link="3">
+                <img src="assets/img/gallery/bordeaux_3-thumb.jpg" alt="">
+            </a>
+            <a href="#" class="gallery-item gallery-thumb-link" data-modal-link="4">
+                <img src="assets/img/gallery/bordeaux_4-thumb.jpg" alt="">
+            </a>
+            <a href="#" class="gallery-item gallery-thumb-link" data-modal-link="5">
+                <img src="assets/img/gallery/bordeaux_5-thumb.jpg" alt="">
+            </a>
+            <a href="#" class="gallery-item gallery-thumb-link" data-modal-link="6">
+                <img src="assets/img/gallery/bordeaux_6-thumb.jpg" alt="">
+            </a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="location" class="section align-center">
-        <div class="container">
-            <span class="icon section-icon icon-travel-transportation-06"></span>
-            <h4>How to get to the venue?</h4>
-            <h5>Direct Shuttle from the airport to the train station</h5>
-            <p>
-                <ul>
+<section id="contacts">
+    <div class="contacts-wrapper">
+        <div id="contacts-map" class="map" data-settings="map-settings.json" style="height:560px;"></div>
+
+        <div class="container contacts-on-map-container">
+            <div class="contacts-on-map">
+                <h3>Cap Sciences</h3>
+
+                <ul class="list">
                     <li>
-                        <strong>Time: 30'</strong>
+                        <i class="fa fa-map-marker"></i>Hangar 20, Quai de Bacalan — Bordeaux
                     </li>
                     <li>
-                        <strong>Price: 8€ (one way)</strong>
+                        <i class="fa fa-envelope"></i>info@ncrafts.io
                     </li>
                     <li>
-                        <a href="http://30direct.com/en/high-season-schedule/">Timetables</a>
-                    </li>
-                    <li>
-                        <a href="http://30direct.com/en/tarifs-vente-tickets/">Fares</a>
+                        <i class="fa fa-clock-o"></i>9:00 - 18:00
                     </li>
                 </ul>
-            </p>
-            <h5>Tram from the train station to Cap Sciences</h5>
-            <p>
-                <ul>
-                    <li>
-                        <strong>Time: 30'</strong>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="location" class="section align-center">
+    <div class="container">
+        <span class="icon section-icon icon-travel-transportation-06"></span>
+        <h4>How to get to the venue?</h4>
+        <h5>Direct Shuttle from the airport to the train station</h5>
+        <p>
+        <ul>
+            <li>
+                <strong>Time: 30'</strong>
+            </li>
+            <li>
+                <strong>Price: 8€ (one way)</strong>
+            </li>
+            <li>
+                <a href="http://30direct.com/en/high-season-schedule/">Timetables</a>
+            </li>
+            <li>
+                <a href="http://30direct.com/en/tarifs-vente-tickets/">Fares</a>
+            </li>
+        </ul>
+        </p>
+        <h5>Tram from the train station to Cap Sciences</h5>
+        <p>
+        <ul>
+            <li>
+                <strong>Time: 30'</strong>
+            </li>
+            <li>
+                <strong>Price: 1.50€ (one way)</strong>
+            </li>
+        </ul>
+        <ol>
+            <li>Tram C from Train station (Gare St Jean) to Quinconces (direction> Gare de Blanquefort) (15 minutes)
+            </li>
+            <li>Change tram lines</li>
+            <li>Tram B from Quinconces to Cité du vin (10 minutes)</li>
+        </ol>
+        </p>
+        <br> You can get more info and prepare your itinerary with public transports at the
+        <a href="https://www.infotbm.com/">TBM website</a>.
+    </div>
+</section>
+
+<section id="coc" class="section align-center">
+    <div class="container">
+        <h5 class="heading-alt">Code of conduct</h5>
+        <p class="text-alt" style="margin-bottom: 0px;">Our conference is dedicated to providing a harassment-free
+            conference experience for everyone, regardless of
+            gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size,
+            race, or religion (or lack thereof). We do not tolerate harassment of conference participants in any form.
+            Sexual language and imagery is not appropriate for any conference venue, including talks, workshops,
+            parties,
+            Twitter and other online media. Conference participants violating these rules may be sanctioned or expelled
+            from the conference without a refund at the discretion of the conference organisers.</p>
+    </div>
+</section>
+
+<section class="footer">
+    <div class="container">
+
+        <div class="col-md-4">
+            <div class="widget about-widget">
+                <h6 class="widget-head">About
+                    <span class="highlight">nCrafts</span>
+                </h6>
+                <p class="text-alt">
+                    <small>NewCrafts is an independent and international software development conference held annually
+                        in Paris
+                        since 2014.
+                        <br/> Created by developers for developers, NewCrafts is an ephemeral learning ground for
+                        professional
+                        developers who care for quality code and bettering their practices.
+                    </small>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-base">
+        <div class="container">
+
+            <div class="col-md-6">
+                <ul class="footer-nav">
+                    <li class="footer-nav-item">
+                        <a href="#contacts">Contact</a>
                     </li>
-                    <li>
-                        <strong>Price: 1.50€ (one way)</strong>
+                    <li class="footer-nav-item">
+                        <a href="#coc">Code of conduct</a>
                     </li>
                 </ul>
-                <ol>
-                    <li>Tram C from Train station (Gare St Jean) to Quinconces (direction> Gare de Blanquefort) (15 minutes)</li>
-                    <li>Change tram lines</li>
-                    <li>Tram B from Quinconces to Cité du vin (10 minutes)</li>
-                </ol>
-            </p>
-            <br> You can get more info and prepare your itinerary with public transports at the
-            <a href="https://www.infotbm.com/">TBM website</a>.
-        </div>
-    </section>
+            </div>
 
-    <section id="coc" class="section align-center">
-        <div class="container">
-            <h5 class="heading-alt">Code of conduct</h5>
-            <p class="text-alt" style="margin-bottom: 0px;">Our conference is dedicated to providing a harassment-free conference experience for everyone, regardless of
-                gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size,
-                race, or religion (or lack thereof). We do not tolerate harassment of conference participants in any form.
-                Sexual language and imagery is not appropriate for any conference venue, including talks, workshops, parties,
-                Twitter and other online media. Conference participants violating these rules may be sanctioned or expelled
-                from the conference without a refund at the discretion of the conference organisers.</p>
-        </div>
-    </section>
+            <div class="col-md-6 align-right">
+                <ul class="socials-nav align-right">
+                    <li class="socials-nav-item">
+                        <a target="_blank" href="https://twitter.com/ncraftsconf">
+                            <span class="fa fa-twitter"></span>
+                        </a>
+                    </li>
+                    <li class="socials-nav-item">
+                        <a target="_blank" href="https://github.com/ncraftsconf">
+                            <span class="fa fa-github"></span>
+                        </a>
+                    </li>
+                    <li class="socials-nav-item">
+                        <a target="_blank" href="http://videos.ncrafts.io/">
+                            <span class="fa fa-vimeo-square"></span>
+                        </a>
+                    </li>
+                </ul>
 
-    <section class="footer">
-        <div class="container">
-
-            <div class="col-md-4">
-                <div class="widget about-widget">
-                    <h6 class="widget-head">About
-                        <span class="highlight">nCrafts</span>
-                    </h6>
-                    <p class="text-alt">
-                        <small>NewCrafts is an independent and international software development conference held annually in Paris
-                            since 2014.
-                            <br /> Created by developers for developers, NewCrafts is an ephemeral learning ground for professional
-                            developers who care for quality code and bettering their practices.
-                        </small>
-                    </p>
-                </div>
+                <p class="text-alt">
+                    <small>nCraft Bordeaux 2017</small>
+                </p>
             </div>
 
         </div>
-
-        <div class="footer-base">
-            <div class="container">
-
-                <div class="col-md-6">
-                    <ul class="footer-nav">
-                        <li class="footer-nav-item">
-                            <a href="#contacts">Contact</a>
-                        </li>
-                        <li class="footer-nav-item">
-                            <a href="#coc">Code of conduct</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-md-6 align-right">
-                    <ul class="socials-nav align-right">
-                        <li class="socials-nav-item">
-                            <a target="_blank" href="https://twitter.com/ncraftsconf">
-                                <span class="fa fa-twitter"></span>
-                            </a>
-                        </li>
-                        <li class="socials-nav-item">
-                            <a target="_blank" href="https://github.com/ncraftsconf">
-                                <span class="fa fa-github"></span>
-                            </a>
-                        </li>
-                        <li class="socials-nav-item">
-                            <a target="_blank" href="http://videos.ncrafts.io/">
-                                <span class="fa fa-vimeo-square"></span>
-                            </a>
-                        </li>
-                    </ul>
-
-                    <p class="text-alt">
-                        <small>nCraft Bordeaux 2017</small>
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <div class="modal-window" data-modal="1">
-        <div class="modal-box animated" data-animation="zoomIn" data-duration="700">
-            <span class="close-btn icon icon-office-52"></span>
-
-            <img src="assets/img/gallery/bordeaux_1.jpg" class="full-width-img" alt="gallery1">
-        </div>
     </div>
-    <div class="modal-window" data-modal="2">
-        <div class="modal-box animated" data-animation="zoomIn" data-duration="700">
-            <span class="close-btn icon icon-office-52"></span>
+</section>
 
-            <img src="assets/img/gallery/bordeaux_2.jpg" class="full-width-img" alt="gallery1">
-        </div>
+<div class="modal-window" data-modal="1">
+    <div class="modal-box animated" data-animation="zoomIn" data-duration="700">
+        <span class="close-btn icon icon-office-52"></span>
+
+        <img src="assets/img/gallery/bordeaux_1.jpg" class="full-width-img" alt="gallery1">
     </div>
-    <div class="modal-window" data-modal="3">
-        <div class="modal-box animated" data-animation="zoomIn" data-duration="700">
-            <span class="close-btn icon icon-office-52"></span>
+</div>
+<div class="modal-window" data-modal="2">
+    <div class="modal-box animated" data-animation="zoomIn" data-duration="700">
+        <span class="close-btn icon icon-office-52"></span>
 
-            <img src="assets/img/gallery/bordeaux_3.jpg" class="full-width-img" alt="gallery1">
-        </div>
+        <img src="assets/img/gallery/bordeaux_2.jpg" class="full-width-img" alt="gallery1">
     </div>
-    <div class="modal-window" data-modal="4">
-        <div class="modal-box animated" data-animation="zoomIn" data-duration="700">
-            <span class="close-btn icon icon-office-52"></span>
+</div>
+<div class="modal-window" data-modal="3">
+    <div class="modal-box animated" data-animation="zoomIn" data-duration="700">
+        <span class="close-btn icon icon-office-52"></span>
 
-            <img src="assets/img/gallery/bordeaux_4.jpg" class="full-width-img" alt="gallery1">
-        </div>
+        <img src="assets/img/gallery/bordeaux_3.jpg" class="full-width-img" alt="gallery1">
     </div>
-    <div class="modal-window" data-modal="5">
-        <div class="modal-box animated" data-animation="zoomIn" data-duration="700">
-            <span class="close-btn icon icon-office-52"></span>
+</div>
+<div class="modal-window" data-modal="4">
+    <div class="modal-box animated" data-animation="zoomIn" data-duration="700">
+        <span class="close-btn icon icon-office-52"></span>
 
-            <img src="assets/img/gallery/bordeaux_5.jpg" class="full-width-img" alt="gallery1">
-        </div>
+        <img src="assets/img/gallery/bordeaux_4.jpg" class="full-width-img" alt="gallery1">
     </div>
-    <div class="modal-window" data-modal="6">
-        <div class="modal-box animated" data-animation="zoomIn" data-duration="700">
-            <span class="close-btn icon icon-office-52"></span>
+</div>
+<div class="modal-window" data-modal="5">
+    <div class="modal-box animated" data-animation="zoomIn" data-duration="700">
+        <span class="close-btn icon icon-office-52"></span>
 
-            <img src="assets/img/gallery/bordeaux_6.jpg" class="full-width-img" alt="gallery1">
-        </div>
+        <img src="assets/img/gallery/bordeaux_5.jpg" class="full-width-img" alt="gallery1">
     </div>
+</div>
+<div class="modal-window" data-modal="6">
+    <div class="modal-box animated" data-animation="zoomIn" data-duration="700">
+        <span class="close-btn icon icon-office-52"></span>
 
-    <!--[if lt IE 9]>
+        <img src="assets/img/gallery/bordeaux_6.jpg" class="full-width-img" alt="gallery1">
+    </div>
+</div>
+
+<!--[if lt IE 9]>
 <script type="text/javascript" src="assets/js/jquery-1.11.3.min.js?ver=1"></script>
 <![endif]-->
-    <!--[if (gte IE 9) | (!IE)]><!-->
-    <script type="text/javascript" src="assets/js/jquery-2.1.4.min.js?ver=1"></script>
-    <!--<![endif]-->
+<!--[if (gte IE 9) | (!IE)]><!-->
+<script type="text/javascript" src="assets/js/jquery-2.1.4.min.js?ver=1"></script>
+<!--<![endif]-->
 
-    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
-    <script type="text/javascript" src="assets/js/toastr.min.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.waypoints.min.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.appear.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.plugin.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.countTo.js"></script>
-    <script type="text/javascript" src="assets/js/masonry.pkgd.min.js"></script>
-    <script type="text/javascript" src="assets/js/modal-box.js"></script>
-    <script type="text/javascript" src="assets/js/ventcamp.js"></script>
-    <script async type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3&libraries=places&key=AIzaSyBLvWRkzKyZLd9-NqSH4eh2aq87gMeUFk8&callback=mapsCallback"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="assets/js/toastr.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.waypoints.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.appear.js"></script>
+<script type="text/javascript" src="assets/js/jquery.plugin.js"></script>
+<script type="text/javascript" src="assets/js/jquery.countTo.js"></script>
+<script type="text/javascript" src="assets/js/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="assets/js/modal-box.js"></script>
+<script type="text/javascript" src="assets/js/ventcamp.js"></script>
+<script async type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?v=3&libraries=places&key=AIzaSyBLvWRkzKyZLd9-NqSH4eh2aq87gMeUFk8&callback=mapsCallback"></script>
 </body>
 
 </html>
