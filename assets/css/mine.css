@@ -22,3 +22,10 @@
 p {
     line-height: 25px;
 }
+
+.lang .fa {
+    margin-right: 8px;
+    vertical-align: middle;
+    color: #babfcc;
+}
+
