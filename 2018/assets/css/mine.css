@@ -1,0 +1,31 @@
+.subtitle {
+    padding: 0 100px;
+}
+
+.hero-background {
+    background-image: url("../img/backgrounds/bordeaux.jpg");
+    background-position: 0 top;
+}
+
+.navigation-header {
+    padding: 5px 0 0;
+}
+
+.bg4 {
+    background-image: url("../img/backgrounds/bordeaux.jpg");
+}
+
+.speaker .photo-wrapper img {
+    height: 200px;
+}
+
+p {
+    line-height: 25px;
+}
+
+.lang .fa {
+    margin-right: 8px;
+    vertical-align: middle;
+    color: #babfcc;
+}
+
