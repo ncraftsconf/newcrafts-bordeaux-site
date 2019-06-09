@@ -1,4 +1,4 @@
 +++
 title = "day2"
-category = "main"
+category = "workshop"
 +++

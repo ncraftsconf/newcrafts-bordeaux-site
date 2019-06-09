@@ -1,11 +1,13 @@
+
 {{ range $index, $page  := .Pages }}
+
 <div class="panel schedule-item">
     <div class="lecture-icon-wrapper">
         <span class="fa fa-{{ .Type }}"></span>
     </div>
 
-    <a data-toggle="collapse" data-parent="#schedule_{{ .CurrentSection.Title}}_main_timeline"
-        class="schedule-item-toggle" {{ if .Content }}href={#schedule_{{ .CurrentSection.Title}}_main_timeline{{ $index }} {{ end }}>
+    <a data-toggle="collapse" data-parent="#schedule_{{.CurrentSection.Title}}_{{$.Params.Category}}_timeline"
+        class="schedule-item-toggle" {{ if .Content }}href={#schedule_{{ .CurrentSection.Title}}_{{$.Params.Category}}_timeline{{ $index }} {{ end }}>
         <strong class="time highlight">
             <span class="icon icon-office-24"></span>{{ .Params.schedule }}</strong>
         <h6 class="title">
@@ -14,7 +16,7 @@
         </h6>
     </a>
     {{ if .Content }}
-    <div id="schedule_{{ .CurrentSection.Title}}_main_timeline{{ $index }}"
+    <div id="schedule_{{ .CurrentSection.Title}}_{{$.Params.Category}}_timeline{{ $index }}"
         class="panel-collapse collapse in schedule-item-body">
         <article>
             <p class="description">
