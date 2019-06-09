@@ -1,0 +1,29 @@
+{{ partial "header/site-header.html" .}}
+
+{{ partial "header/nav.html" .}}
+
+{{ partial "header/dna.html" .}}
+
+{{ with printf "/speakers/%s" .Params.selector | .Site.GetPage }}
+{{ .Render "all" }}
+{{ end }}
+
+{{ partial "content/openspace.html" . }}
+
+{{ partial "content/schedule.html" . }}
+
+{{ partial "content/register" . }}
+
+{{ with printf "/sponsors/%s" .Params.selector | .Site.GetPage }}
+{{ .Render "all" }}
+{{ end }}
+
+{{ partial "content/training.html" . }}
+
+{{ partial "content/past.html" . }}
+
+{{ partial "content/venue.html" . }}
+
+{{ partial "content/contact.html" . }}
+
+{{ partial "content/transport.html" . }}

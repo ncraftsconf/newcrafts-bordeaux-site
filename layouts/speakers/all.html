@@ -1,0 +1,57 @@
+<section id="speakers" class="section align-center">
+    <div class="container">
+        <span class="icon section-icon icon-faces-users-04"></span>
+        <h3>Speakers</h3>
+        <p class="text-alt">Meet our
+            <span class="highlight">hosts</span>
+        </p>
+        <br />
+        <br />
+        <div class="col-sm-4">
+            {{ range .Pages }}
+
+            <div class="speaker">
+                <div class="photo-wrapper rounded">
+
+                    {{ $pic := .Resources.GetMatch "photo.*" }}
+                    {{ if $pic}}
+                    <img src={{ ($pic.Fill "200x200 center").RelPermalink }} alt={{ .Title }} class="img-responsive">
+                    {{ else }}
+                    <img src="/assets/img/speakers/speaker1.jpg" alt="Speaker1" class="img-responsive">
+                    {{ end }}
+                </div>
+                <h3 class="name">{{ .Title }}</h3>
+                <p class="text-alt">
+                    <small>
+                        {{ .Params.jobtitle }}
+                    </small>
+                </p>
+                <p class="about">
+                    {{ .Content }}
+                </p>
+                <ul class="speaker-socials">
+                    {{ range $name,$link := .Params.social}}
+                    <li>
+                        <a target="_blank" href={{ $link }}>
+                            <span class={{ printf "fa fa-%s" $name }}></span>
+                        </a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+            {{ end }}
+        </div>
+        <div class="clearfix"></div>
+
+
+        <div>
+            {{ if not .Params.complete }}
+            <span class="highlight">More to be announced!</span>
+            {{ end }}
+            {{ if (not .Pages )}}
+            <span class="highlight">To be announced!</span>
+            {{ end }}
+        </div>
+
+    </div>
+</section>
