@@ -9,17 +9,16 @@
 
             <!-- Schedule start -->
             <div class="row schedule">
-                {{ .GetPage "/talks/2019/day1" }}
                 <!-- Navigation by day start -->
                 <ul class="nav nav-schedule">
                     <li class="active">
-                        <a href="#schedule3_day1" data-toggle="tab">
+                        <a href="#schedule_day1" data-toggle="tab">
                             <h5 class="highlight">Day 1 - conference</h5>
                             <p class="text-alt">{{ dateFormat "January 2rd" $.Params.startdate }}</p>
                         </a>
                     </li>
                     <li>
-                        <a href="#schedule3_day2" data-toggle="tab">
+                        <a href="#schedule_day2" data-toggle="tab">
                             <h5 class="highlight">Day 2 — open space</h5>
                             <p class="text-alt">{{ dateFormat "January 2th" $.Params.enddate }}</p>
                         </a>
@@ -31,378 +30,29 @@
                 <div class="tab-content">
 
                     <!-- Day 1 content start -->
-                    <div id="schedule3_day1" class="tab-pane fade active in">
+                    <div id="schedule_day1" class="tab-pane fade active in">
 
                         <!-- Second level content start -->
                         <div class="tab-content tab-content-schedule">
 
                             <!-- Main content start -->
-                            <div id="schedule3_day1_main" class="tab-pane fade active in">
+                            <div id="schedule_day1_main" class="tab-pane fade active in">
 
                                 <!-- Accordion start -->
-                                <div class="panel-group" id="schedule3_day1_main_timeline">
-
-                                    <!-- Lecture start -->
-                                    <div class="panel schedule-item">
-                                        <div class="lecture-icon-wrapper">
-                                            <span class="fa fa-coffee"></span>
-                                        </div>
-                                        <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline"
-                                            class="schedule-item-toggle">
-                                            <strong class="time highlight">
-                                                <span class="icon icon-office-24"></span>8:30 - 9:00</strong>
-                                            <h6 class="title">Check-in time
-                                            </h6>
-                                        </a>
-                                    </div>
-
-                                    <div class="panel schedule-item">
-                                        <div class="lecture-icon-wrapper">
-                                            <span class="fa fa-microphone"></span>
-                                        </div>
-                                        <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline"
-                                            class="schedule-item-toggle">
-                                            <strong class="time highlight">
-                                                <span class="icon icon-office-24"></span>9:00 - 9:10</strong>
-                                            -
-                                            <strong class="lang highlight">
-                                                en
-                                            </strong>
-                                            <h6 class="title">Opening words
-                                            </h6>
-                                        </a>
-                                    </div>
-
-                                    <div class="panel schedule-item">
-                                        <div class="lecture-icon-wrapper">
-                                            <span class="fa fa-microphone"></span>
-                                        </div>
-                                        <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline"
-                                            class="schedule-item-toggle" href="#schedule3_day1_main_keynote">
-                                            <strong class="time highlight">
-                                                <span class="icon icon-office-24"></span>9:15 - 10:05</strong>
-                                            -
-                                            <strong class="lang highlight">
-                                                en
-                                            </strong>
-                                            <h6 class="title">
-                                                <i class="icon icon-arrows-06"></i>
-                                                <!--title-->
-                                            </h6>
-                                        </a>
-                                        <div id="schedule3_day1_main_keynote"
-                                            class="panel-collapse collapse in schedule-item-body">
-                                            <article>
-                                                <p class="description">
-                                                    <!--p>
-                              description
-                            </p>
-                            <ol>
-                              <li>tag1</li>
-                              <li>tag2</li>
-                            </ol-->
-                                                </p>
-                                                <strong class="highlight speaker-name">
-                                                    <!--Speaker name--></strong>
-                                            </article>
-                                        </div>
-                                    </div>
-
-                                    <div class="panel schedule-item">
-                                        <div class="lecture-icon-wrapper">
-                                            <span class="fa fa-microphone"></span>
-                                        </div>
-                                        <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline"
-                                            href="#schedule3_day1_main_time2" class="schedule-item-toggle">
-                                            <strong class="time highlight">
-                                                <span class="icon icon-office-24"></span>10:10 - 11:00
-                                            </strong>
-                                            -
-                                            <strong class="lang highlight">
-                                                en
-                                            </strong>
-
-                                            <h6 class="title">
-                                                <i class="icon icon-arrows-06"></i>
-                                                <!--title-->
-                                            </h6>
-                                        </a>
-                                        <div id="schedule3_day1_main_time2"
-                                            class="panel-collapse collapse in schedule-item-body">
-                                            <article>
-                                                <p class="description">
-                                                    <!--p>
-                              description
-                            </p>
-                            <ol>
-                              <li>tag1</li>
-                              <li>tag2</li>
-                            </ol-->
-                                                </p>
-                                                <strong class="highlight speaker-name">
-                                                    <!--Speaker name--></strong>
-                                            </article>
-                                        </div>
-                                    </div>
-
-                                    <div class="panel schedule-item">
-                                        <div class="lecture-icon-wrapper">
-                                            <span class="fa fa-coffee"></span>
-                                        </div>
-                                        <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline"
-                                            class="schedule-item-toggle">
-                                            <strong class="time highlight">
-                                                <span class="icon icon-office-24"></span>11:00 - 11:25</strong>
-                                            <h6 class="title">Break
-                                                <i class="icon icon-arrows-06"></i>
-                                            </h6>
-                                        </a>
-                                    </div>
-
-                                    <div class="panel schedule-item">
-                                        <div class="lecture-icon-wrapper">
-                                            <span class="fa fa-microphone"></span>
-                                        </div>
-                                        <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline"
-                                            href="#schedule3_day1_main_time1" class="schedule-item-toggle">
-                                            <strong class="time highlight">
-                                                <span class="icon icon-office-24"></span>11:25 - 12:15</strong>
-                                            -
-                                            <strong class="lang highlight">
-                                                en
-                                            </strong>
-                                            <h6 class="title">
-                                                <i class="icon icon-arrows-06"></i>
-                                                <!--title-->
-                                            </h6>
-                                        </a>
-                                        <div id="schedule3_day1_main_time1"
-                                            class="panel-collapse collapse in schedule-item-body">
-                                            <article>
-                                                <p class="description">
-                                                    <!--p>
-                              description
-                            </p>
-                            <ol>
-                              <li>tag1</li>
-                              <li>tag2</li>
-                            </ol-->
-                                                </p>
-                                                <strong class="highlight speaker-name">
-                                                    <!--Speaker name--></strong>
-                                            </article>
-                                        </div>
-                                    </div>
-                                    <div class="panel schedule-item">
-                                        <div class="lecture-icon-wrapper">
-                                            <span class="fa fa-cutlery"></span>
-                                        </div>
-                                        <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline"
-                                            class="schedule-item-toggle">
-                                            <strong class="time highlight">
-                                                <span class="icon icon-office-24"></span>12:15 - 13:30</strong>
-                                            <h6 class="title">Lunch time
-                                                <i class="icon icon-arrows-06"></i>
-                                            </h6>
-                                        </a>
-                                    </div>
-
-                                    <div class="panel schedule-item">
-                                        <div class="lecture-icon-wrapper">
-                                            <span class="fa fa-microphone"></span>
-                                        </div>
-                                        <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline"
-                                            href="#schedule3_day1_main_time6" class="schedule-item-toggle">
-                                            <strong class="time highlight">
-                                                <span class="icon icon-office-24"></span>13:30 - 14:20</strong>
-                                            -
-                                            <strong class="lang highlight">
-                                                en
-                                            </strong>
-
-                                            <h6 class="title">
-                                                <i class="icon icon-arrows-06"></i>
-                                                <!--title-->
-                                            </h6>
-                                        </a>
-                                        <div id="schedule3_day1_main_time6"
-                                            class="panel-collapse collapse in schedule-item-body">
-                                            <article>
-                                                <p class="description">
-                                                    <!--p>
-                              description
-                            </p>
-                            <ol>
-                              <li>tag1</li>
-                              <li>tag2</li>
-                            </ol-->
-                                                </p>
-                                                <strong class="highlight speaker-name">
-                                                    <!--Speaker name--></strong>
-                                            </article>
-                                        </div>
-                                    </div>
-
-                                    <div class="panel schedule-item">
-                                        <div class="lecture-icon-wrapper">
-                                            <span class="fa fa-microphone"></span>
-                                        </div>
-                                        <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline"
-                                            href="#schedule3_day1_main_time3" class="schedule-item-toggle">
-                                            <strong class="time highlight">
-                                                <span class="icon icon-office-24"></span>14:25 - 15:15</strong>
-                                            -
-                                            <strong class="lang highlight">
-                                                en
-                                            </strong>
-                                            <h6 class="title">
-                                                <i class="icon icon-arrows-06"></i>
-                                                <!--title-->
-                                            </h6>
-                                        </a>
-                                        <div id="schedule3_day1_main_time3"
-                                            class="panel-collapse collapse in schedule-item-body">
-                                            <article>
-                                                <p class="description">
-                                                    <!--p>
-                              description
-                            </p>
-                            <ol>
-                              <li>tag1</li>
-                              <li>tag2</li>
-                            </ol-->
-                                                </p>
-                                                <strong class="highlight speaker-name">
-                                                    <!--Speaker name--></strong>
-                                            </article>
-                                        </div>
-                                    </div>
-
-                                    <div class="panel schedule-item">
-                                        <div class="lecture-icon-wrapper">
-                                            <span class="fa fa-coffee"></span>
-                                        </div>
-                                        <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline"
-                                            class="schedule-item-toggle">
-                                            <strong class="time highlight">
-                                                <span class="icon icon-office-24"></span>15:15 - 15:40</strong>
-                                            <h6 class="title">Break
-                                                <i class="icon icon-arrows-06"></i>
-                                            </h6>
-                                        </a>
-                                    </div>
-
-                                    <div class="panel schedule-item">
-                                        <div class="lecture-icon-wrapper">
-                                            <span class="fa fa-microphone"></span>
-                                        </div>
-                                        <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline"
-                                            href="#schedule3_day1_main_time4" class="schedule-item-toggle">
-                                            <strong class="time highlight">
-                                                <span class="icon icon-office-24"></span>15:40 - 16:30</strong>
-                                            -
-                                            <strong class="lang highlight">
-                                                en
-                                            </strong>
-                                            <h6 class="title">
-                                                <i class="icon icon-arrows-06"></i>
-                                                <!--title-->
-                                            </h6>
-                                        </a>
-                                        <div id="schedule3_day1_main_time4"
-                                            class="panel-collapse collapse in schedule-item-body">
-                                            <article>
-                                                <p class="description">
-                                                    <!--p>
-                              description
-                            </p>
-                            <ol>
-                              <li>tag1</li>
-                              <li>tag2</li>
-                            </ol-->
-                                                </p>
-                                                <strong class="highlight speaker-name">
-                                                    <!--Speaker name--></strong>
-                                            </article>
-                                        </div>
-                                    </div>
-
-                                    <div class="panel schedule-item">
-                                        <div class="lecture-icon-wrapper">
-                                            <span class="fa fa-microphone"></span>
-                                        </div>
-                                        <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline"
-                                            href="#schedule3_day1_main_time5" class="schedule-item-toggle">
-                                            <strong class="time highlight">
-                                                <span class="icon icon-office-24"></span>16:35 - 17:25</strong>
-                                            -
-                                            <strong class="lang highlight">
-                                                en
-                                            </strong>
-                                            <h6 class="title">
-                                                <i class="icon icon-arrows-06"></i>
-                                                <!--title-->
-                                            </h6>
-                                        </a>
-                                        <div id="schedule3_day1_main_time5"
-                                            class="panel-collapse collapse in schedule-item-body">
-                                            <article>
-                                                <p class="description">
-                                                    <!--p>
-                              description
-                            </p>
-                            <ol>
-                              <li>tag1</li>
-                              <li>tag2</li>
-                            </ol-->
-                                                </p>
-                                                <strong class="highlight speaker-name">
-                                                    <!--Speaker name--></strong>
-                                            </article>
-                                        </div>
-                                    </div>
-
-                                    <div class="panel schedule-item">
-                                        <div class="lecture-icon-wrapper">
-                                            <span class="fa fa-microphone"></span>
-                                        </div>
-                                        <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline"
-                                            class="schedule-item-toggle">
-                                            <strong class="time highlight">
-                                                <span class="icon icon-office-24"></span>17:30 - 18:00</strong>
-                                            <h6 class="title">Closing words
-                                                <i class="icon icon-arrows-06"></i>
-                                            </h6>
-                                        </a>
-                                    </div>
-
-                                    <div class="panel schedule-item">
-                                        <div class="lecture-icon-wrapper">
-                                            <span class="fa fa-beer"></span>
-                                        </div>
-                                        <a data-toggle="collapse" data-parent="#schedule3_day1_main_timeline"
-                                            class="schedule-item-toggle">
-                                            <strong class="time highlight">
-                                                <span class="icon icon-office-24"></span>18:30 - 23:00</strong>
-                                            <h6 class="title">After</h6>
-                                        </a>
-                                    </div>
-                                    <!-- Lecture end -->
-
+                                <div class="panel-group" id="schedule_day1_main_timeline">
+                                    {{ with printf "/talks/%s/day-1" .Params.selector | .Site.GetPage }}
+                                    {{ .Render "all" }}
+                                    {{ end }}
                                 </div>
-                                <!-- Accordion end -->
-
                             </div>
-                            <!-- Main content end -->
+                            <!-- Second level content end -->
 
                         </div>
-                        <!-- Second level content end -->
-
                     </div>
                     <!-- Day 1 content end -->
 
                     <!-- Day 2 content start -->
-                    <div id="schedule3_day2" class="tab-pane fade in">
+                    <div id="schedule_day2" class="tab-pane fade in">
                         <!--  navigation by room -->
                         <ul class="nav nav-schedule">
                             <li class="active">
