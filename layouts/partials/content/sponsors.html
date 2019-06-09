@@ -1,0 +1,32 @@
+<section id="sponsors" class="section align-center">
+    <div class="container">
+        <span class="icon section-icon icon-documents-bookmarks-12"></span>
+        <p class="text-alt">organisations that make this
+            <span class="highlight">event</span> possible</p>
+        <h3>Partners</h3>
+        <div class="sponsors">
+            {{ range where .Pages "Params.package" "partner" }}
+            {{ .Render "summary"}}
+            {{ end }}
+        </div>
+        <br>
+        <br>
+        <h3>Sponsors</h3>
+        <br>
+        <br>
+        <div class="sponsors">
+            {{ range where .Pages "Params.package" "sponsor" }}
+            {{ .Render "summary"}}
+            {{ end }}
+        </div>
+        <h3>Friends</h3>
+        <br>
+        <br>
+        <div class="sponsors">
+            {{ range where .Pages "Params.package" "friend" }}
+            {{ .Render "summary"}}
+            {{ end }}
+        </div>
+    </div>
+
+</section>

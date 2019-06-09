@@ -1,0 +1,22 @@
+{{ $all := .Site.GetPage "/gallery" }}
+
+{{ with $all.Resources.ByType "image"}}
+<div class="row gallery">
+    {{ range $index, $img := . }}
+    <a href="#" class="gallery-item gallery-thumb-link" data-modal-link={{$index}}>
+        <img src={{ ($img.Fill "350x300 center").RelPermalink }} alt="">
+    </a>
+    {{ end }}
+
+</div>
+{{ range $index, $img := . }}
+<div class="modal-window" data-modal={{ $index }}>
+    <div class="modal-box animated" data-animation="zoomIn" data-duration="700">
+        <span class="close-btn icon icon-office-52"></span>
+
+        <img src={{ $img.RelPermalink }} class="full-width-img" alt="gallery1">
+    </div>
+</div>
+{{ end }}
+
+{{ end }}

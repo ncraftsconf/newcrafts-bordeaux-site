@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    {{ partial "head/head.html" . }}
+
+</head>
+
+<body>
+
+    {{ partial "header/preload.html" .}}
+
+    {{ partial "header/site-header.html" .}}
+
+    {{ partial "header/nav.html" .}}
+
+    {{ partial "header/dna.html" .}}
+
+    {{ .Site.GetPage "/speakers" | partial "content/speakers.html" }}
+
+    {{ partial "content/openspace.html" . }}
+
+    {{ partial "content/schedule.html" . }}
+
+    {{ partial "content/register" . }}
+
+    {{ .Site.GetPage "/sponsors" | partial "content/sponsors.html" }}
+
+    {{ partial "content/training.html" . }}
+
+    {{ partial "content/past.html" . }}
+
+    {{ partial "content/venue.html" . }}
+
+    {{ partial "content/contact.html" . }}
+
+    {{ partial "content/transport.html" . }}
+
+    {{ partial "footer/coc.html" . }}
+
+    {{ partial "footer/footer.html" .}}
+
+    {{ partial "footer/scripts.html" . }}
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<section id="hero" class="hero-section hero-background bg-cover window-height light-text">
+        <ul class="socials-nav">
+            <li class="socials-nav-item">
+                <a target="_blank" href="https://twitter.com/ncraftsBdx">
+                    <span class="fa fa-twitter"></span>
+                </a>
+            </li>
+            <li class="socials-nav-item">
+                <a target="_blank" href="https://github.com/ncraftsconf">
+                    <span class="fa fa-github"></span>
+                </a>
+            </li>
+            <li class="socials-nav-item">
+                <a target="_blank" href="http://videos.ncrafts.io/">
+                    <span class="fa fa-vimeo-square"></span>
+                </a>
+            </li>
+        </ul>
+        <div class="heading-block centered-block align-center">
+            <div class="container">
+                <h5 class="heading-alt" style="margin-bottom: 8px;">
+                    <span class="fa fa-calendar-o base-clr-txt"></span>
+                    {{ dateFormat "January 2rd" $.Params.startdate }} & {{ dateFormat "2th 2006" $.Params.enddate }}
+                    <span class="fa fa-map-marker base-clr-txt" style="margin-left: 14px;"></span>Bordeaux, France</h5>
+                <h1 class="extra-heading">Newcrafts Bdx</h1>
+                <h6 class="thin base-font subtitle">
+                    Created by developers for developers,
+                    <strong>NewCrafts</strong> is an ephemeral learning ground for professional developers who care for
+                    quality code and bettering their practices
+                </h6>
+                <div class="btns-container">
+                    <a href={{ printf "%s" $.Params.ticketslink }} target="_blank"
+                        class="btn btn-md">GET TICKETS</a>
+                    <a href={{ printf "mailto:%s" $.Site.Params.email }} target="_blank" class="btn btn-md">Become a sponsor</a>
+                    <a href="#schedule" class="btn btn-outline btn-md">SCHEDULE</a>
+                </div>
+            </div>
+        </div>
+    </section>

@@ -1,0 +1,9 @@
+baseURL = "https://bordeaux.ncrafts.io"
+languageCode = "en-us"
+title = "NewCrafts - Bordeaux"
+disableKinds = ["RSS", "sitemap"]
+
+[taxonomies]
+
+[params]
+email = "bdx@ncrafts.io"
