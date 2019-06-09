@@ -1,4 +1,4 @@
-<section id="gallery" class="section overlay overlay-clr bg-cover bg4 light-text align-center">
+<section id="past" class="section overlay overlay-clr bg-cover bg4 light-text align-center">
     <div class="container">
         <span class="icon section-icon icon-socialmedia-28"></span>
         <h3>Past Events</h3>
@@ -9,9 +9,13 @@
         <a href="http://videos.ncrafts.io/" target="_blank" class="btn btn-lg btn-outline">Videos</a>
         <br>
         <br>
-        <p>The website of the previous NewCrafts Bordeaux edition is available at
+        <p>The website of the previous NewCrafts Bordeaux editions are available at
             <br>
-            <a href="/2018" class="link-btn light-text">{{ .Site.BaseURL }}/2018</a>
+            {{ range .Params.past }}
+                <a href="/{{.}}" class="link-btn light-text">{{ .}}</a>    
+                <br>
+            {{ end }} 
+            
         </p>
     </div>
 </section>

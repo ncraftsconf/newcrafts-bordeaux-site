@@ -1,6 +1,6 @@
-{{ partial "header/site-header.html" .}}
+{{ .Render "header" }}
 
-{{ partial "header/nav.html" .}}
+{{ .Render "nav" }}
 
 {{ partial "header/dna.html" .}}
 
@@ -12,7 +12,7 @@
 
 {{ .Render "schedule" }}
 
-{{ partial "content/register" . }}
+{{ .Render "register" }}
 
 {{ with printf "/sponsors/%s" .Params.selector | .Site.GetPage }}
 {{ .Render "all" }}
@@ -20,7 +20,7 @@
 
 {{ partial "content/training.html" . }}
 
-{{ partial "content/past.html" . }}
+{{ .Render "past" }}
 
 {{ partial "content/venue.html" . }}
 

@@ -20,7 +20,7 @@
             <div class="container">
                 <h5 class="heading-alt" style="margin-bottom: 8px;">
                     <span class="fa fa-calendar-o base-clr-txt"></span>
-                    {{ dateFormat "January 2rd" $.Params.startdate }} & {{ dateFormat "2th 2006" $.Params.enddate }}
+                    {{ dateFormat "January 2rd" .Params.startdate }} & {{ dateFormat "2th 2006" .Params.enddate }}
                     <span class="fa fa-map-marker base-clr-txt" style="margin-left: 14px;"></span>Bordeaux, France</h5>
                 <h1 class="extra-heading">Newcrafts Bdx</h1>
                 <h6 class="thin base-font subtitle">
@@ -29,9 +29,9 @@
                     quality code and bettering their practices
                 </h6>
                 <div class="btns-container">
-                    <a href={{ printf "%s" $.Params.ticketslink }} target="_blank"
+                    <a href={{ printf "%s" .Params.ticketslink }} target="_blank"
                         class="btn btn-md">GET TICKETS</a>
-                    <a href={{ printf "mailto:%s" $.Site.Params.email }} target="_blank" class="btn btn-md">Become a sponsor</a>
+                    <a href={{ printf "mailto:%s" .Site.Params.email }} target="_blank" class="btn btn-md">Become a sponsor</a>
                     <a href="#schedule" class="btn btn-outline btn-md">SCHEDULE</a>
                 </div>
             </div>
