@@ -1,6 +1,6 @@
 <div class="sponsor inline">
     {{ $logo := .Resources.GetMatch "logo.*" }}
     <a href={{ .Params.link }} target="_blank" title={{- .Title -}}>
-        <img src={{ ($logo.Resize "150x").RelPermalink }} alt={{ .Title }}>
+        <img src={{ ($logo.Fit "200x100").RelPermalink }} alt={{ .Title }}>
     </a>
 </div>
