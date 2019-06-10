@@ -1,9 +1,9 @@
 +++
 title = "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
+date = {{ .Date }}
 jobtitle= "Chief Data & Insights Officer"
-website="https://katecarruthers.com/about-kate-carruthers/"
 [social]
+globe="https://katecarruthers.com/about-kate-carruthers/"
 twitter="https://twitter.com/kcarruthers"
 linkedin="https://www.linkedin.com/in/katecarruthers/"
 +++

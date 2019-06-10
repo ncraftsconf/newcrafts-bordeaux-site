@@ -5,7 +5,7 @@ serve local version :
 `hugo serve -D`
 
 add sponsor : 
-`hugo new --kind sponsor sponsors/sponsor-name`
+`hugo new --kind sponsor sponsors/2019/sponsor-name`
 
 add speaker : 
-`hugo new --kind speaker speakers/speaker-name`
+`hugo new --kind speaker speakers/2019/speaker-name`

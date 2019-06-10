@@ -7,9 +7,8 @@
         </p>
         <br />
         <br />
+        {{ range .Pages }}
         <div class="col-sm-4">
-            {{ range .Pages }}
-
             <div class="speaker">
                 <div class="photo-wrapper rounded">
 
@@ -39,8 +38,9 @@
                     {{ end }}
                 </ul>
             </div>
-            {{ end }}
+            
         </div>
+        {{ end }}
         <div class="clearfix"></div>
 
 
