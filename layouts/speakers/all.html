@@ -7,7 +7,7 @@
         </p>
         <br />
         <br />
-        {{ range .Pages }}
+        {{ range $index, $page := .Pages }}
         <div class="col-sm-4">
             <div class="speaker">
                 <div class="photo-wrapper rounded">
@@ -40,6 +40,9 @@
             </div>
             
         </div>
+        {{ if modBool (add $index 1) 3}}
+        <div class="clearfix" ></div>
+        {{ end }}
         {{ end }}
         <div class="clearfix"></div>
 
