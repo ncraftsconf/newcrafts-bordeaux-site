@@ -1,14 +1,18 @@
 +++
 title = "Felienne Hermans"
 date = 2019-06-10T20:55:19+02:00
-jobtitle= "Associate professor programming education @liacs."
+jobtitle= "Associate professor programming education"
 [social]
 twitter="http://twitter.com/Felienne"
 github="http://github.com/Felienne"
 globe="http://www.felienne.com"
 +++
-Felienne is assistant professor at Delft University of Technology, where she makes programming for non-programmers more awesome. She built an IDE for spreadsheets in the form of smell detection, refactoring and unit testing tools for Excel, and has researched code smells and clone detection in the Scratch programming language for kids.
+Felienne is associate professor at the [Leiden Institute of Advanced Computer Science](https://liacs.leidenuniv.nl/) at Leiden University, where she heads the PERL research group, focused on programming education.
 
-She is also one of the founders of Joy of Coding, a one day developer conference in Rotterdam, celebrating the love for programming.
+On Saturdays she teaches children programming in a local community centre. She is one of the organizers of the [CurryOn](https://www.curry-on.org) conference, which aims to bridge the gap between industry and academia. Felienne was also one of the founders of the [Joy of Coding](https://joyofcoding.org/) conference, with a similar goal, which she organized for 6 years. Since 2016, she has been a host at [SE radio](https://www.se-radio.net/), one of the most popular software engineering podcasts on the web. When she is not coding, blogging or teaching, she is probably knitting, running or playing a (board)game.
 
-When not building programs that play board games or card games, she is probably dancing Lindy Hop or killing creeps in a tower defense game.
+Felienne is a member of a number of boards:
+
+* [Scientific council](https://www.mediawijzer.net/van-mediawijzer-net/wetenschappelijkeraad/) of [Netwerk mediawijzer](https://www.mediawijzer.net/)
+* [Kivi](https://www.kivi.nl/) [IT board](https://www.kivi.nl/afdelingen/informatica/bestuur-contact)
+* [I&I](https://ieni.org/) [board](https://ieni.org/over-ons)
