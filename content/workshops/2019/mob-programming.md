@@ -1,6 +1,8 @@
 +++
 name = "Mob Programming"
+year = "2019"
 author = "woody-zuill"
+date = 2019-05-24T21:59:33+02:00
 +++
 
 Mob Programming: All the brilliant people working on the same thing, at the same time, in the same place, and on the same computer.

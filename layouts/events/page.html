@@ -4,11 +4,15 @@
 
 {{ partial "header/dna.html" .}}
 
-{{ with printf "/speakers/%s" .Params.selector | .Site.GetPage }}
+{{ with printf "/workshops/%s" .Params.selector | .Site.GetPage }}
 {{ .Render "all" }}
 {{ end }}
 
 {{ partial "content/openspace.html" . }}
+
+{{ with printf "/speakers/%s" .Params.selector | .Site.GetPage }}
+{{ .Render "all" }}
+{{ end }}
 
 {{ .Render "schedule" }}
 

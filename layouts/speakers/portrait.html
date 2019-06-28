@@ -1,0 +1,8 @@
+<div class="photo-wrapper rounded">
+    {{ $pic := .Resources.GetMatch "photo.*" }}
+    {{ if $pic}}
+    <img src={{ ($pic.Fill "200x200 center").RelPermalink }} alt={{ .Title }} class="img-responsive">
+    {{ else }}
+    <img src="/assets/img/speakers/speaker1.jpg" alt="Speaker1" class="img-responsive">
+    {{ end }}
+</div>

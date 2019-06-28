@@ -1,0 +1,32 @@
+<section id="workshops" class="section align-center">
+    <div class="container">
+        <span class="icon section-icon icon-education-science-03"></span>
+        <h3>Workshops</h3>
+        <p class="text-alt">October, 7th
+        </p>
+        <br />
+        <br />
+        {{ range $index, $page := .Pages }}
+        <div class="container">
+            <div class="col-sm-6">
+                <h4>{{ .Params.Name }}</h4>
+                <div class="speaker">
+                    {{ with printf "speakers/%s/%s" .Params.year .Params.author | .Site.GetPage }}
+                    {{ .Render "portrait"}}
+                    <h5>{{ .Name }}</h5>
+                    {{ end }}
+                </div>                
+            </div>
+            <div class="col-sm-6 align-left">
+                {{ .Summary }}
+            </div>
+            <div class="col-sm-12 align-center">
+                <div class="btns-container">
+                        <a href={{ .RelPermalink }} class="btn btn-md">REGISTER</a>
+                    </div>
+            </div>
+        </div>
+        {{ end }}
+
+    </div>
+</section>
