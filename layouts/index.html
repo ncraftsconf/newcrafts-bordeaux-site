@@ -1,23 +1,7 @@
-<!doctype html>
-<html lang="en">
+{{ define "main" }}
 
-<head>
-    {{ partial "head/head.html" . }}
-</head>
+{{ with .GetPage "/events/2019" }}
+{{ .Render "page" }}
+{{ end }}
 
-<body>
-
-    {{ partial "header/preload.html" .}}
-
-    {{ with .GetPage "/events/2019" }}
-        {{ .Render "page" }}
-    {{ end }}
-
-    {{ partial "footer/coc.html" . }}
-
-    {{ partial "footer/footer.html" .}}
-
-    {{ partial "footer/scripts.html" . }}
-</body>
-
-</html>
+{{ end }}
