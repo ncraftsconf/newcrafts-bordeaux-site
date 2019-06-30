@@ -2,7 +2,11 @@
 name = "Mob Programming"
 year = "2019"
 author = "woody-zuill"
-date = 2019-05-24T21:59:33+02:00
+begin = 2019-10-07T09:00:00+02:00
+end = 2019-10-07T17:00:00+02:00
+location = "18 Parvis des Chartrons, Bordeaux"
+locationName = "Centre de congrès Cité Mondiale"
+
 +++
 
 Mob Programming: All the brilliant people working on the same thing, at the same time, in the same place, and on the same computer.

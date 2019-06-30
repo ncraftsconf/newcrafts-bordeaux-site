@@ -1,5 +1,40 @@
 {{ define "main" }}
-<section class="section align-center">
+<header class="header header-black">
+    <div class="header-wrapper">
+        <div class="container">
+            <div class="col-sm-2 col-xs-12 navigation-header align-center">
+                <a href="/" class="logo">
+                    <img src="/assets/img/logo2.png" alt="NewCrafts" height="85" class="retina-hide">
+                    <img src="/assets/img/logo2.png" alt="NewCrafts" height="85" class="retina-show">
+                </a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation"
+                    aria-expanded="false" aria-controls="navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="col-sm-10 col-xs-12 navigation-container">
+                <div id="navigation" class="navbar-collapse collapse">
+                    <ul class="navigation-list pull-left light-text">
+                        <li class="navigation-item">
+                            <a href="#description" class="navigation-link">The workshop</a>
+                        </li>
+                        <li class="navigation-item">
+                            <a href="#register" class="navigation-link">Register</a>
+                        </li>
+                        <li class="navigation-item">
+                            <a href="#informations" class="navigation-link">Informations</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section id="description" class="section align-center">
     <div class="container">
         <div class="container">
             <div class="col-sm-6">
@@ -24,8 +59,8 @@
         Our partner, Audavia, will contact you quickly
         <br>
         <br>
-        <form class="form-horizontal">
-            <input type="hidden" name="workshop" value={{ printf "%s %s" .Params.Name .Params.Year }}>
+        <form class="form-horizontal" data-netlify="true" action="/success" method="POST" name={{ printf "%s-workshops" .Params.Year }}>
+            <input type="hidden" name="workshop" value={{ .Params.Name }}>
             <div class="form-group">
                 <label for="email" class="col-sm-4 control-label">Email</label>
                 <div class="col-sm-5">
@@ -54,7 +89,7 @@
                 <div class="col-sm-offset-4 col-sm-5">
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox"> I will use my OPCO or profesionnal training
+                            <input type="checkbox"> I want to use OPCO or profesionnal training
                         </label>
                     </div>
                 </div>
@@ -67,5 +102,25 @@
         </form>
     </div>
 </section>
+<section id="informations">
+        <div class="contacts-wrapper">
+            <div id="contacts-map" class="map" data-settings="/assets/map-settings.json" style="height:560px;"></div>
+    
+            <div class="container contacts-on-map-container">
+                <div class="contacts-on-map">
+                    <h3>{{ .Params.locationName }}</h3>
+    
+                    <ul class="list">
+                        <li>
+                            <i class="fa fa-map-marker"></i>{{ .Params.location }}
+                        </li>
+                        <li>
+                            <i class="fa fa-clock-o"></i>{{ dateFormat "January 2" .Params.begin }},  {{ dateFormat "15:04" .Params.begin }} - {{ dateFormat "15:04" .Params.end }}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
 {{ end }}
