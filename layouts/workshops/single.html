@@ -28,7 +28,7 @@
                             <a href="#informations" class="navigation-link">Informations</a>
                         </li>
                     </ul>
-                    
+
                 </div>
             </div>
         </div>
@@ -59,7 +59,8 @@
         Our partner, Audavia, will contact you quickly
         <br>
         <br>
-        <form class="form-horizontal" data-netlify="true" action="/success" method="POST" name={{ printf "%s-workshops" .Params.Year }}>
+        <form class="form-horizontal" data-netlify="true" action="/registration/success" method="POST"
+            name={{ printf "%s-workshops" .Params.Year }}>
             <input type="hidden" name="workshop" value={{ .Params.Name }}>
             <div class="form-group">
                 <label for="email" class="col-sm-4 control-label">Email</label>
@@ -103,24 +104,25 @@
     </div>
 </section>
 <section id="informations">
-        <div class="contacts-wrapper">
-            <div id="contacts-map" class="map" data-settings="/assets/map-settings.json" style="height:560px;"></div>
-    
-            <div class="container contacts-on-map-container">
-                <div class="contacts-on-map">
-                    <h3>{{ .Params.locationName }}</h3>
-    
-                    <ul class="list">
-                        <li>
-                            <i class="fa fa-map-marker"></i>{{ .Params.location }}
-                        </li>
-                        <li>
-                            <i class="fa fa-clock-o"></i>{{ dateFormat "January 2" .Params.begin }},  {{ dateFormat "15:04" .Params.begin }} - {{ dateFormat "15:04" .Params.end }}
-                        </li>
-                    </ul>
-                </div>
+    <div class="contacts-wrapper">
+        <div id="contacts-map" class="map" data-settings="/assets/map-settings.json" style="height:560px;"></div>
+
+        <div class="container contacts-on-map-container">
+            <div class="contacts-on-map">
+                <h3>{{ .Params.locationName }}</h3>
+
+                <ul class="list">
+                    <li>
+                        <i class="fa fa-map-marker"></i>{{ .Params.location }}
+                    </li>
+                    <li>
+                        <i class="fa fa-clock-o"></i>{{ dateFormat "January 2" .Params.begin }},
+                        {{ dateFormat "15:04" .Params.begin }} - {{ dateFormat "15:04" .Params.end }}
+                    </li>
+                </ul>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
 {{ end }}

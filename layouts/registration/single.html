@@ -1,0 +1,34 @@
+{{ define "main" }}
+<header class="header header-black">
+    <div class="header-wrapper">
+        <div class="container">
+            <div class="col-sm-2 col-xs-12 navigation-header align-center">
+                <a href="/" class="logo">
+                    <img src="/assets/img/logo2.png" alt="NewCrafts" height="85" class="retina-hide">
+                    <img src="/assets/img/logo2.png" alt="NewCrafts" height="85" class="retina-show">
+                </a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation"
+                    aria-expanded="false" aria-controls="navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            
+        </div>
+    </div>
+</header>
+
+<section id="register" class="section overlay overlay-clr bg-cover bg4 light-text align-center">
+    <div class="container">
+        <h2>Thank you !</h2>
+        <br>
+        {{ .Content }}
+        <br>
+        <a href="/" class="btn btn-lg btn-outline">BACK TO THE EVENT</a>
+    </div>
+    
+</section>
+
+
+{{ end }}
