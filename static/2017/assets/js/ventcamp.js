@@ -28,7 +28,7 @@ Ventcamp = {
         smoothScroll: false,
         smoothScrollSpeed: 800,
         pseudoSelect: true,
-        ajaxedForm: true,
+        ajaxedForm: false,
         ajaxedFormSuccessMsg: 'Success',
         ajaxedFormErrorMsg: 'An error occured. Please try again later.',
         toastrPositionClass: 'toast-top-full-width'
