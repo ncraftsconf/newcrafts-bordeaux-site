@@ -4,9 +4,10 @@ year = "2019"
 author = "woody-zuill"
 begin = 2019-10-07T09:00:00+02:00
 end = 2019-10-07T17:00:00+02:00
-location = "18 Parvis des Chartrons, Bordeaux"
-locationName = "Centre de congrès Cité Mondiale"
+location = ""
+locationName = "To be announced"
 price = 700
+participants = 20
 +++
 
 Mob Programming: All the brilliant people working on the same thing, at the same time, in the same place, and on the same computer.

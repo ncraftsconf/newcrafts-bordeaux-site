@@ -51,36 +51,87 @@
             </div>
             <div class="col-sm-6 align-center">
                 <h3>{{ .Params.price }} € HT</h3>
+                <h5>{{ .Params.participants}} participants maximum</h5>
+                <h5>Formation en anglais</h5>
             </div>
         </div>
     </div>
 </section>
 <section id="register" class="section overlay overlay-clr bg-cover bg4 light-text align-center">
     <div class="container">
-        <h2>Register to {{ .Params.Name }}</h2>
+        <h2>S'inscrire pour {{ .Params.Name }}</h2>
         <br>
-        Our partner, Audavia, will contact you quickly
+        Notre partenaire, Audavia, vous contactera pour mettre en place la convention de formation.
+
         <br>
         <br>
         <form class="form-horizontal" data-netlify="true" action="/registration/success/" method="post"
             name={{ printf "%s-workshops" .Params.Year }}>
             <input type="hidden" name="workshop" value={{ .Params.Name }}>
             <div class="form-group">
-                <label for="email" class="col-sm-4 control-label">Email</label>
+                <label for="company" class="col-sm-4 control-label">Entreprise</label>
                 <div class="col-sm-5">
-                    <input type="email" name="email" required class="form-control" id="email" placeholder="Email">
+                    <input type="text" name="company" class="form-control" id="company" placeholder="Entreprise">
                 </div>
             </div>
             <div class="form-group">
-                <label for="company" class="col-sm-4 control-label">Company</label>
+                <label for="company_address" class="col-sm-4 control-label">Adresse de l'entreprise</label>
                 <div class="col-sm-5">
-                    <input type="text" name="company" class="form-control" id="company" placeholder="Company">
+                    <input type="text" name="company_address" class="form-control" id="company_address" placeholder="Adresse">
                 </div>
             </div>
             <div class="form-group">
-                <label for="name" class="col-sm-4 control-label">Name</label>
+                <label for="company_siret" class="col-sm-4 control-label">SIRET</label>
                 <div class="col-sm-5">
-                    <input type="text" name="name" required class="form-control" id="name" placeholder="Your name">
+                    <input type="text" name="company_siret" class="form-control" id="company_siret" placeholder="SIRET">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="contact_name" class="col-sm-4 control-label">Nom du contact</label>
+                <div class="col-sm-5">
+                    <input type="text" name="contact_name" required class="form-control" id="contact_name" placeholder="Nom du contact">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="contact_email" class="col-sm-4 control-label">Email du contact</label>
+                <div class="col-sm-5">
+                    <input type="email" name="contact_email" required class="form-control" id="contact_email" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="contact_phone" class="col-sm-4 control-label">Numéro de téléphone du contact</label>
+                <div class="col-sm-5">
+                    <input type="tel" name="contact_phone" class="form-control" id="contact_phone" placeholder="06">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-4 col-sm-5">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="opco"> Je souhaite utiliser nom OPCO pour financer cette formation
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="opco_name" class="col-sm-4 control-label">Nom de mon OPCO</label>
+                <div class="col-sm-5">
+                    <input type="tel" name="opco_name" class="form-control" id="opco_name" placeholder="OPCO">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="company_size" class="col-sm-4 control-label">Taille de mon entreprise</label>
+                <div class="col-sm-5">
+                    <input type="tel" name="company_size" class="form-control" id="company_size" placeholder="<10 salariés | de 11 à 50 salariés">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-4 col-sm-5">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" checked name="delegate"> Je fais cette demande pour moi-même. 
+                        </label>
+                    </div>
                 </div>
             </div>
             <div class="form-group">
@@ -90,14 +141,18 @@
                 </div>
             </div>
             <div class="form-group">
-                <div class="col-sm-offset-4 col-sm-5">
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" name="opco"> I want to use OPCO or profesionnal training
-                        </label>
-                    </div>
+                <label for="attendee_name" class="col-sm-4 control-label">Nom du participant·e</label>
+                <div class="col-sm-5">
+                    <input type="text" name="attendee_name" required class="form-control" id="attendee_name" placeholder="Nom du participant·e">
                 </div>
             </div>
+            <div class="form-group">
+                <label for="attendee_function" class="col-sm-4 control-label">Fonction du participant·e</label>
+                <div class="col-sm-5">
+                    <input type="text" name="attendee_function" required class="form-control" id="attendee_function" placeholder="Fonction du participant·e">
+                </div>
+            </div>
+            
             <div class="form-group">
                 <div class="col-sm-offset-4 col-sm-5">
                     <button type="submit" class="btn btn-default btn-outline">Register</button>
