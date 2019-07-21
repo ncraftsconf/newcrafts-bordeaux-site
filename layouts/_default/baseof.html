@@ -16,6 +16,8 @@
     {{ partial "footer/footer.html" .}}
 
     {{ partial "footer/scripts.html" . }}
+    {{ block "scripts" . }}
+    {{ end }}
 </body>
 
 </html>
