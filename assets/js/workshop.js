@@ -38,9 +38,13 @@
             var removeButton = $(this.removeAttendeeButton);
             newBlock.find("h5").text("Participant·e " + attendeesCount);
             newBlock.find("label").first().attr('for', 'attendee_name_' + attendeesCount);
-            newBlock.find("label").last().attr('for', 'attendee_function_' +attendeesCount);
-            newBlock.find("input").first().attr('id', 'attendee_name_' + attendeesCount);
-            newBlock.find("input").last().attr('id', 'attendee_function_' +attendeesCount);
+            newBlock.find("label").last().attr('for', 'attendee_function_' + attendeesCount);
+            newBlock.find("input").first()
+                .attr('name', 'attendee_name_' + attendeesCount)
+                .attr('id', 'attendee_name_' + attendeesCount);
+            newBlock.find("input").last()
+                .attr('name', 'attendee_function_' + attendeesCount)
+                .attr('id', 'attendee_function_' + attendeesCount);
             this.attendeesPlaceHolder.find("#addAttendee")
                 .before(newBlock)
                 .before(removeButton);
@@ -49,10 +53,10 @@
                 newBlock.remove();
                 removeButton.remove();
                 WorkshopForm.computeAttendeesPositions();
-            });  
+            });
         },
-        computeAttendeesPositions: function() {
-            this.attendeesPlaceHolder.find(".attendee").each((index,element) => {
+        computeAttendeesPositions: function () {
+            this.attendeesPlaceHolder.find(".attendee").each((index, element) => {
                 $(element).find('h5').text('Participant·e ' + (index + 1));
             });
         }
