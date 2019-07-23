@@ -234,5 +234,5 @@
 
 {{ define "scripts"}}
 {{ $script := resources.Get "js/workshop.js" | resources.Minify | resources.Fingerprint }}
-<script type="text/javascript" src={{ $script.Permalink}}></script>
+<script type="text/javascript" src={{ $script.RelPermalink}}></script>
 {{ end }}
