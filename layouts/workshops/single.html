@@ -38,6 +38,10 @@
     <div class="container">
         <div class="container">
             <div class="col-sm-6">
+                <i class="fa fa-clock-o"></i>&nbsp;{{ dateFormat "January 2" .Params.begin }},
+                {{ dateFormat "15:04" .Params.begin }} - {{ dateFormat "15:04" .Params.end }}
+                <br>
+                <i class="fa fa-map-marker"></i>&nbsp;Bordeaux
                 <h4>{{ .Params.Name }}</h4>
                 <div class="speaker">
                     {{ with printf "speakers/%s/%s" .Params.year .Params.author | .Site.GetPage }}
@@ -121,8 +125,7 @@
                 <div class="form-group opco">
                     <label for="opco_name" class="col-sm-4 control-label">Nom de mon OPCO</label>
                     <div class="col-sm-5">
-                        <input type="tel" name="opco_name" class="form-control" id="opco_name"
-                            placeholder="OPCO">
+                        <input type="tel" name="opco_name" class="form-control" id="opco_name" placeholder="OPCO">
                     </div>
                 </div>
                 <div class="form-group opco">
@@ -148,7 +151,8 @@
                 <div class="attendee">
                     <h5>Participant·e {{ . }}</h5>
                     <div class="form-group">
-                        <label for="attendee_name_{{ . }}" class="col-sm-4 control-label">Nom du participant·e {{ . }}</label>
+                        <label for="attendee_name_{{ . }}" class="col-sm-4 control-label">Nom du participant·e
+                            {{ . }}</label>
                         <div class="col-sm-5">
                             <input type="text" name="attendee_name_{{ . }}" class="form-control"
                                 id="attendee_name_{{ . }}" placeholder="Nom du participant·e">
