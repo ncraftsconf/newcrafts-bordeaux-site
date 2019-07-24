@@ -148,7 +148,7 @@
                 <div class="attendee">
                     <h5>Participant·e {{ . }}</h5>
                     <div class="form-group">
-                        <label for="attendee_name_{{ . }}" class="col-sm-4 control-label">Nom du participant·e</label>
+                        <label for="attendee_name_{{ . }}" class="col-sm-4 control-label">Nom du participant·e {{ . }}</label>
                         <div class="col-sm-5">
                             <input type="text" name="attendee_name_{{ . }}" class="form-control"
                                 id="attendee_name_{{ . }}" placeholder="Nom du participant·e">
@@ -156,7 +156,7 @@
                     </div>
                     <div class="form-group">
                         <label for="attendee_function_{{ . }}" class="col-sm-4 control-label">Fonction du
-                            participant·e</label>
+                            participant·e {{ . }}</label>
                         <div class="col-sm-5">
                             <input type="text" name="attendee_function_{{ . }}" class="form-control"
                                 id="attendee_function_{{ . }}" placeholder="Fonction du participant·e">
