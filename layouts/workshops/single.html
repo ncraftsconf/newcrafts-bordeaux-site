@@ -117,35 +117,61 @@
                     </div>
                 </div>
             </div>
-            <div id="opcoQuestions">
-                    
+            <div id="opcoQuestions" class="hidden">
+                <div class="form-group opco">
+                    <label for="opco_name" class="col-sm-4 control-label">Nom de mon OPCO</label>
+                    <div class="col-sm-5">
+                        <input type="tel" name="opco_name" class="form-control" id="opco_name"
+                            placeholder="OPCO">
+                    </div>
+                </div>
+                <div class="form-group opco">
+                    <label for="company_size" class="col-sm-4 control-label">Taille de mon entreprise</label>
+                    <div class="col-sm-5">
+                        <input type="tel" name="company_size" class="form-control" id="company_size"
+                            placeholder="<10 salariés | de 11 à 50 salariés">
+                    </div>
+                </div>
             </div>
             <div class="form-group">
-                    <div class="col-sm-offset-4 col-sm-5">
-                        <div class="checkbox">
-                            <label>
-                                <input id="delegate" type="checkbox" checked name="delegate"> Je fais cette demande pour
-                                moi-même.
-                            </label>
+                <div class="col-sm-offset-4 col-sm-5">
+                    <div class="checkbox">
+                        <label>
+                            <input id="delegate" type="checkbox" checked name="delegate"> Je fais cette demande pour
+                            moi-même.
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div id="attendees" class="hidden">
+                {{ range seq 6 }}
+                <div class="attendee">
+                    <h5>Participant·e {{ . }}</h5>
+                    <div class="form-group">
+                        <label for="attendee_name_{{ . }}" class="col-sm-4 control-label">Nom du participant·e</label>
+                        <div class="col-sm-5">
+                            <input type="text" name="attendee_name_{{ . }}" class="form-control"
+                                id="attendee_name_{{ . }}" placeholder="Nom du participant·e">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="attendee_function_{{ . }}" class="col-sm-4 control-label">Fonction du
+                            participant·e</label>
+                        <div class="col-sm-5">
+                            <input type="text" name="attendee_function_{{ . }}" class="form-control"
+                                id="attendee_function_{{ . }}" placeholder="Fonction du participant·e">
                         </div>
                     </div>
                 </div>
-            <div id="attendees">
-                <div class="attendee">
-                    <h5>Participant 1</h5>
-                    <div class="form-group">
-                        <label for="attendee_name" class="col-sm-4 control-label">Nom du participant·e</label>
-                        <div class="col-sm-5">
-                            <input type="text" name="attendee_name" required class="form-control" id="attendee_name"
-                                placeholder="Nom du participant·e">
-                        </div>
+                {{ end }}
+                <div class="form-group" id="addAttendee">
+                    <div class="col-sm-offset-4 col-sm-5">
+                        <button type="button" class="btn btn-block btn-info">Ajouter une personne de plus</button>
                     </div>
-                    <div class="form-group">
-                        <label for="attendee_function" class="col-sm-4 control-label">Fonction du participant·e</label>
-                        <div class="col-sm-5">
-                            <input type="text" name="attendee_function" required class="form-control"
-                                id="attendee_function" placeholder="Fonction du participant·e">
-                        </div>
+                </div>
+                <div class="form-group" id="removeAttendee">
+                    <div class="col-sm-offset-4 col-sm-5">
+                        <button type="button" class="btn btn-block btn-danger">Supprimer</button>
                     </div>
                 </div>
             </div>
@@ -178,57 +204,6 @@
         </div>
     </div>
 </section>
-
-<script id="attendee-template" type="text">
-        <div class="attendee">
-                <h5>Participant·e 1</h5>
-                <div class="form-group">
-                    <label for="attendee_name_1" class="col-sm-4 control-label">Nom</label>
-                    <div class="col-sm-5">
-                        <input type="text" name="attendee_name" required class="form-control" id="attendee_name_1"
-                            placeholder="Nom">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="attendee_function_1" class="col-sm-4 control-label">Fonction</label>
-                    <div class="col-sm-5">
-                        <input type="text" name="attendee_function" required class="form-control"
-                            id="attendee_function_1" placeholder="Fonction">
-                    </div>
-                </div>
-            </div>
-</script>
-<script id="opco-template" type="text">
-        <div class="form-group opco">
-                <label for="opco_name" class="col-sm-4 control-label">Nom de mon OPCO</label>
-                <div class="col-sm-5">
-                    <input type="tel" name="opco_name" required class="form-control" id="opco_name" placeholder="OPCO">
-                </div>
-            </div>
-        <div class="form-group opco">
-                <label for="company_size" class="col-sm-4 control-label">Taille de mon entreprise</label>
-                <div class="col-sm-5">
-                    <input type="tel" name="company_size" class="form-control" id="company_size"
-                        placeholder="<10 salariés | de 11 à 50 salariés">
-                </div>
-            </div>
-            
-</script>
-
-<script type="text" id="add-attendee-template">
-        <div class="form-group" id="addAttendee">
-                <div class="col-sm-offset-4 col-sm-5">
-                    <button type="button" class="btn btn-block btn-info">Ajouter une personne de plus</button>
-                </div>
-            </div>
-</script>
-<script type="text" id="remove-attendee-template">
-        <div class="form-group">
-                <div class="col-sm-offset-4 col-sm-5">
-                    <button type="button" class="btn btn-block btn-danger">Supprimer</button>
-                </div>
-            </div>
-</script>
 
 {{ end }}
 

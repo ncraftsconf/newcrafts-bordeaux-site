@@ -1,36 +1,57 @@
 (function ($) {
 
+    var attendeesNumber = 1;
+
     var WorkshopForm = {
         init: function () {
-            this.addAttendeeButton = $("#add-attendee-template").html();
-            this.removeAttendeeButton = $("#remove-attendee-template").html();
-            this.opcoTemplate = $("#opco-template").html();
             this.opcoPlaceHolder = $("#opcoQuestions");
             this.opcoInput = $("#opco");
             this.delegateInput = $("#delegate");
-            this.attendeeTemplate = $("#attendee-template").html();
             this.attendeesPlaceHolder = $("#attendees");
             this.opcoInput.on('change', () => WorkshopForm.checkOpco());
             this.delegateInput.on('change', () => WorkshopForm.checkDelegate());
-            this.checkOpco();
-            this.checkDelegate();
+            this.addButton = $("#addAttendee");
+            this.removeButton = $("#removeAttendee");
+            this.addButton.on('click', () => {
+                attendeesNumber = Math.min(6, attendeesNumber+1);
+                WorkshopForm.hideUnusedAttendees();
+            });
+            this.removeButton.on('click', () => {
+                attendeesNumber = Math.max(1, attendeesNumber-1);
+                WorkshopForm.hideUnusedAttendees();
+            });
+            //this.checkOpco();
+            //this.checkDelegate();
         },
         checkOpco: function () {
-            if (this.opcoInput.is(':checked')) {
-                this.opcoPlaceHolder.append(this.opcoTemplate);
+            this.opcoPlaceHolder.toggleClass("hidden", !this.opcoInput.is(':checked'));
+        },
+        hideUnusedAttendees: function () {
+            var attendees = this.attendeesPlaceHolder.find(".attendee");
+            attendees.slice(0, attendeesNumber).show();
+            attendees.slice(attendeesNumber).hide();
+            if(attendeesNumber === 6) {
+                this.addButton.hide();
             } else {
-                this.opcoPlaceHolder.empty();
+                this.addButton.show();
+            }
+            if(attendeesNumber === 1) {
+                this.removeButton.hide();
+            } else {
+                this.removeButton.show();
             }
         },
         checkDelegate: function () {
-            if (this.delegateInput.is(':checked')) {
+            this.attendeesPlaceHolder.toggleClass("hidden", this.delegateInput.is(':checked'));
+            this.hideUnusedAttendees();
+            /* if (this.delegateInput.is(':checked')) {
                 this.attendeesPlaceHolder.empty();
             } else {
                 var addButton = $(this.addAttendeeButton);
                 addButton.on('click', () => WorkshopForm.addAttendee());
                 this.attendeesPlaceHolder.append(this.attendeeTemplate);
                 this.attendeesPlaceHolder.append(addButton);
-            }
+            } */
         },
         addAttendee: function () {
             var attendeesCount = this.attendeesPlaceHolder.find(".attendee").size() + 1;
