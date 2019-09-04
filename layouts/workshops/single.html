@@ -58,6 +58,16 @@
                 <h5>{{ .Params.participants}} participants maximum</h5>
                 <h5>Formation en anglais</h5>
             </div>
+            <div class="col-sm-6 align-center">
+                <br/>
+                <b>Formation portée par</b>
+                <br/>
+                {{ $logo := .Parent.Resources.GetMatch "audavia.*" }}
+                <a href="http://www.audavia-formation.fr/" target="_blank" title="Audavia">
+                    <img src={{ ($logo.Fit "200x100").RelPermalink }} alt="Audavia">
+                </a>
+                
+            </div>
         </div>
     </div>
 </section>
