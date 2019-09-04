@@ -1,7 +1,9 @@
 {{ define "meta"}}
 <title>{{ .Params.Name }} - {{ dateFormat "January 2" .Params.begin }} - NewCrafts Bordeaux {{ .Params.year }} </title>
 
-<meta name="description"
+<meta name="og:title"
+    content="{{ .Params.Name }} - {{ dateFormat "January 2" .Params.begin }} - NewCrafts Bordeaux {{ .Params.year }}">
+<meta name="og:description"
     content="{{ .Summary}} ">
 <meta name="keywords"
     content="Software Craftsmanship, Bordeaux, Mob Programming">
