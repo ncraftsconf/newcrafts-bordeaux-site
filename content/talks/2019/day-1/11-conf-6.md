@@ -1,14 +1,9 @@
 +++
-name = "Meetings With Remarkable Trees"
+name = "Category Theory: You Already Know It"
 type = "microphone"
 schedule = "15:40 - 16:30"
-speakers = ["Bodil Stokke"]
+speakers = ["Emilien Pecoul"]
 +++
+Category Theory might be really intimidating. So much complex words used by very smart people, how can we pretend to understand this? Do we need to understand it? In a nutshell, Category Theory is the most abstract branch of mathematic. So abstract that you use it already, without knowing it, in different implementations. You also have the basic knowledge to understand more concrete examples. 
 
-Everybody knows the classic cons list. Clojure brag about their bitmapped vector tries. Haskell weenies took it up a notch with their impossible finger trees. Rustaceans turned back the clock and gave us simple arrays again.
-
-All of these have shortcomings. Hickey tries are magically indexable but the only other thing you can do to them is add things to the end. Finger trees are absurdly flexible but you can't index them efficiently. And so the search goes on...
-
-And today, you're going to learn about the ultimate list data structure: the RRB tree ("relaxed radix balanced tree") is an improved version of the tried and tested Hickey trie, which has achieved the impossible: /every/ basic operation is efficient - push and pop on either end, index lookup, split and join. RRB trees pull no punches.
-
-Watch as Bodil shows you diagrams with brightly coloured boxes in an enthusiastic effort to explain why data structures are amazingly exciting.
+The goal of this talk is to show that, once you have the correct vocabulary, Category Theory is not that hard. I’d like to demonstrate that it is always useful to understand the mathematics roots of this theory, especially if you’re interested in Functional Programming, but also to find your own useful implementation. It is a young discipline, like IT, where most things can still be discovered!

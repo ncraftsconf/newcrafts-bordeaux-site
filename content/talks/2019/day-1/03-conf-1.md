@@ -1,7 +1,13 @@
 +++
-name = "Practical refactoring"
+name = "How to teach programming (and other things)?"
 type = "microphone"
 schedule = "09:15 - 10:05"
-speakers = ["Woody Zuill"]
+speakers = ["Felienne Hermans"]
 +++
-Clean Code That Works, and getting there is half the fun.  Working with a legacy mess can be frustrating, boring, dangerous, and time-consuming.  When FIBS occur (FIBs = Fixes that Introduce Bugs) you often enter an endless Test and Fix cycle that can quickly escalate into a nightmare.  I've been there, you've been there.  How do we return to pleasant dreams?
+Everyone should learn programming, right? Yes! But how... Should we allow children to explore and learn about syntax on their own, or should we drill programming like we rote memorize the table of multiplication or German grammatical cases? 
+
+Felienne's talk outlines this history of programming education and didactics beliefs in programming that lead to the prevalence of exploratory forms of teaching, starting with Papert's LOGO. 
+
+She will then explore programming education in relation to mathematics and language education and explore how rote learning could look like for programming. 
+
+Felienne will discuss her own research into misconceptions and code phonology as means to teach programming more effectively.

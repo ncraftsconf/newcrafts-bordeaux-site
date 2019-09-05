@@ -1,15 +1,13 @@
 +++
-name = "Building Resilient Event-Driven Services"
+name = "Meetings With Remarkable Trees"
 type = "microphone"
 schedule = "14:25 - 15:15"
-speakers = ["James Watson"]
+speakers = ["Bodil Stokke"]
 +++
+Everybody knows the classic cons list. Clojure brag about their bitmapped vector tries. Haskell weenies took it up a notch with their impossible finger trees. Rustaceans turned back the clock and gave us simple arrays again.
 
-At Adaptive we've spent a lot of our time building trading systems which have complex business requirements but also need to be fast and resilient.
+All of these have shortcomings. Hickey tries are magically indexable but the only other thing you can do to them is add things to the end. Finger trees are absurdly flexible but you can't index them efficiently. And so the search goes on...
 
-The core of our system is a clustered service which uses the Raft consensus algorithm to reliably replicate state between the different nodes and hosts our application logic. 
-We will take a quick look at Raft and then at the benefits of this design compared to more "mainstream" architectures. 
-This architecture offers a clean separation of concerns between the infrastructure – which takes care of the concurrency, I/O and high availability aspects – and the application logic. 
-The clean architecture is a great fit for domain-driven design.
+And today, you're going to learn about the ultimate list data structure: the RRB tree ("relaxed radix balanced tree") is an improved version of the tried and tested Hickey trie, which has achieved the impossible: /every/ basic operation is efficient - push and pop on either end, index lookup, split and join. RRB trees pull no punches.
 
-If you fancy building fast, resilient services you should come to this talk!
+Watch as Bodil shows you diagrams with brightly coloured boxes in an enthusiastic effort to explain why data structures are amazingly exciting.
