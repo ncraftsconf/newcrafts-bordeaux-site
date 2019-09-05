@@ -6,8 +6,4 @@ jobtitle= "Freelance"
 twitter="http://twitter.com/Ouarzy"
 globe="http://www.ouarzy.com/"
 +++
-Passionate by #SoftwareCrafting #DDD #CQRS #ES #TDD #BDD #FunctionalProgramming (no specific order).
-
-Lost in #CategoryTheory.
-
-Currently #Freelance and #JobHacker.
+Passionate developer and continuous learner, my first job was in a startup. After a big technical fail, I have learnt a lot through user groups, conferences, books and blogs, to understand and apply the good practices of modern software development. I saw how these practices, when apply well and in the good context, can totally change a product, then a team, then a whole company. Since, I help teams to improve around TDD, BDD and DDD as a freelance consultant in different companies of different size. In the meantime, I use some side projects to keep improve my craft, especially with, CQRS/ES and functional programming.
