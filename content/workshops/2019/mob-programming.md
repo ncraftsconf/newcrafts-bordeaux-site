@@ -4,8 +4,8 @@ year = "2019"
 author = "woody-zuill"
 begin = 2019-10-07T09:00:00+02:00
 end = 2019-10-07T17:30:00+02:00
-location = ""
-locationName = "To be announced"
+location = "39 rue du château d'eau, 33000 BORDEAUX"
+locationName = "Startway Mériadeck"
 price = 700
 participants = 20
 +++
